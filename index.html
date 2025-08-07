@@ -1,0 +1,776 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QUIZ SEE-MG 2025 - ESPECIALISTA EM EDUCAÇÃO BÁSICA</title>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Oxanium:wght@300;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --quantum-blue: #0a192f;
+            --neon-pink: #ADFF2F;
+            --matrix-green: #00ff41;
+            --cyber-purple: #8700ff;
+            --dark-matter: #0f0a18;
+        }
+        body {
+            font-family: 'Oxanium', sans-serif;
+            background-color: var(--dark-matter);
+            color: white;
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+            background-image:
+                radial-gradient(circle at 10% 20%, rgba(135, 0, 255, 0.1) 0%, transparent 20%),
+                radial-gradient(circle at 90% 80%, rgba(173, 255, 47, 0.1) 0%, transparent 20%);
+        }
+        .cyber-container {
+            max-width: 900px;
+            margin: 2rem auto;
+            padding: 2rem;
+            border: 1px solid var(--matrix-green);
+            box-shadow: 0 0 20px var(--cyber-purple);
+            position: relative;
+        }
+        h1 {
+            font-family: 'Orbitron', sans-serif;
+            color: var(--matrix-green);
+            text-align: center;
+            text-shadow: 0 0 10px var(--matrix-green);
+            margin-bottom: 2rem;
+            font-size: 2.2rem;
+        }
+        .subject-tabs {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            margin-bottom: 2rem;
+            flex-wrap: wrap;
+        }
+        .subject-tab {
+            padding: 0.8rem 1.5rem;
+            background: rgba(10, 25, 47, 0.7);
+            border: 1px solid var(--cyber-purple);
+            color: white;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+        .subject-tab:hover, .subject-tab.active {
+            background: var(--cyber-purple);
+            transform: translateY(-3px);
+            border-color: var(--neon-pink);
+        }
+        .question-container {
+            background: rgba(10, 25, 47, 0.8);
+            padding: 2rem;
+            border-left: 4px solid var(--matrix-green);
+            margin-bottom: 2rem;
+            position: relative;
+        }
+        .question-text {
+            font-size: 1.4rem;
+            line-height: 1.5;
+            padding-right: 3rem;
+        }
+        .options-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1rem;
+            margin-top: 1.5rem;
+        }
+        .option {
+            padding: 1.2rem;
+            background: rgba(15, 10, 24, 0.7);
+            border: 1px solid var(--cyber-purple);
+            color: white;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+        .option:hover {
+            background: rgba(135, 0, 255, 0.2);
+            border-color: var(--neon-pink);
+        }
+        .option.correct, .option.selected.correct {
+            background: rgba(0, 255, 65, 0.4);
+            border-color: var(--matrix-green);
+        }
+        .option.selected.incorrect {
+            background: rgba(255, 0, 0, 0.4);
+            border-color: #ff0000;
+        }
+        .feedback, .hint-display {
+            margin-top: 1.5rem;
+            padding: 1rem;
+            background: rgba(10, 25, 47, 0.9);
+            border-left: 4px solid var(--neon-pink);
+            white-space: pre-wrap;
+            display: none;
+        }
+        .cyber-button {
+            padding: 1rem 2rem;
+            background: transparent;
+            border: 1px solid var(--matrix-green);
+            color: var(--matrix-green);
+            font-family: 'Orbitron', sans-serif;
+            cursor: pointer;
+            transition: all 0.3s;
+            text-transform: uppercase;
+            margin: 0.5rem;
+        }
+        .cyber-button:hover {
+            background: var(--matrix-green);
+            color: var(--dark-matter);
+            box-shadow: 0 0 10px var(--matrix-green);
+        }
+        .navigation {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 2rem;
+            align-items: center;
+        }
+        .progress-container {
+            width: 100%;
+            background: rgba(10, 25, 47, 0.7);
+            height: 6px;
+            margin-bottom: 2rem;
+        }
+        .progress-bar {
+            height: 100%;
+            background: linear-gradient(90deg, var(--cyber-purple), var(--neon-pink));
+            width: 0%;
+            transition: width 0.5s;
+        }
+        .hacker-terminal {
+            background: rgba(0, 0, 0, 0.7);
+            border: 1px solid var(--matrix-green);
+            padding: 1rem;
+            margin-top: 2rem;
+            font-family: monospace;
+            color: var(--matrix-green);
+            height: 100px;
+            overflow-y: auto;
+        }
+        .terminal-line { margin: 0; line-height: 1.5; }
+        .blink { animation: blink 1s infinite; }
+        @keyframes blink { 50% { opacity: 0; } }
+        
+        .login-modal {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.9);
+            z-index: 1000;
+            justify-content: center;
+            align-items: center;
+        }
+        .login-box, .results-box {
+            background: var(--quantum-blue);
+            border: 2px solid var(--matrix-green);
+            padding: 2rem;
+            width: 400px;
+            max-width: 90%;
+            box-shadow: 0 0 20px var(--neon-pink);
+            text-align: center;
+        }
+        .login-title, .results-title {
+            color: var(--cyber-purple); 
+            text-align: center;
+            margin-bottom: 1.5rem;
+            font-family: 'Orbitron', sans-serif;
+        }
+        .login-input {
+            width: calc(100% - 1.8rem);
+            padding: 0.8rem;
+            margin-bottom: 1rem;
+            background: rgba(15, 10, 24, 0.7);
+            border: 1px solid var(--cyber-purple);
+            color: white;
+        }
+        .leaderboard { margin-top: 2rem; padding: 1rem; border: 1px solid var(--matrix-green); }
+        .leaderboard h3 { color: var(--neon-pink); border-bottom: 1px solid var(--matrix-green); padding-bottom: 0.5rem; }
+        .leaderboard-item { display: flex; justify-content: space-between; padding: 0.5rem 0; border-bottom: 1px dashed rgba(0, 255, 65, 0.3); }
+        
+        .difficulty-rating {
+           margin-top: 1.5rem; text-align: center; border-top: 1px dashed var(--matrix-green);
+           padding-top: 1.5rem; display: none; flex-direction: column; align-items: center; gap: 1rem; 
+        }
+        .difficulty-rating p { margin-bottom: 0; font-family: 'Orbitron', sans-serif; color: var(--matrix-green); }
+        .facil-btn { border-color: #28a745; color: #28a745; box-shadow: 0 0 5px #28a745, inset 0 0 5px #28a745; }
+        .facil-btn:hover { background: #28a745; box-shadow: 0 0 25px #28a745; color: var(--dark-matter); }
+        .bom-btn { border-color: #007bff; color: #007bff; box-shadow: 0 0 5px #007bff, inset 0 0 5px #007bff; }
+        .bom-btn:hover { background: #007bff; box-shadow: 0 0 25px #007bff; color: var(--dark-matter); }
+        .dificil-btn { border-color: #dc3545; color: #dc3545; box-shadow: 0 0 5px #dc3545, inset 0 0 5px #dc3545; }
+        .dificil-btn:hover { background: #dc3545; box-shadow: 0 0 25px #dc3545; color: var(--dark-matter); }
+        .muito-dificil-btn { border-color: #fd7e14; color: #fd7e14; box-shadow: 0 0 5px #fd7e14, inset 0 0 5px #fd7e14; }
+        .muito-dificil-btn:hover { background: #fd7e14; box-shadow: 0 0 25px #fd7e14; color: var(--dark-matter); }
+        
+        #dashboard-stats { text-align: left; max-height: 60vh; overflow-y: auto; }
+        #dashboard-stats table { width: 100%; border-collapse: collapse; margin-top: 1rem; }
+        #dashboard-stats th, #dashboard-stats td { border: 1px solid var(--cyber-purple); padding: 0.8rem; }
+        #dashboard-stats th { background-color: var(--cyber-purple); font-family: 'Orbitron', sans-serif; }
+        #dashboard-stats .progress-bar-stat { width: 100%; background-color: rgba(255, 255, 255, 0.1); border-radius: 3px; height: 1.2rem; }
+        #dashboard-stats .progress-fill { height: 100%; background-color: var(--matrix-green); border-radius: 3px; display: flex; align-items: center; justify-content: center; font-size: 0.8rem; color: var(--dark-matter); font-weight: bold; }
+        
+        .favorite-icon { position: absolute; top: 1.5rem; right: 1.5rem; font-size: 2rem; color: #555; cursor: pointer; transition: all 0.2s; }
+        .favorite-icon:hover { transform: scale(1.2); color: #f1c40f; }
+        .favorite-icon.favorited { color: #f1c40f; text-shadow: 0 0 10px #f1c40f; }
+        
+        @media (max-width: 768px) {
+            .cyber-container { padding: 1rem; margin: 0; min-height: 100vh; border: none; box-shadow: none; }
+            h1 { font-size: 1.8rem; }
+            .subject-tabs { gap: 0.5rem; }
+            .subject-tab, .cyber-button { padding: 0.7rem 1rem; font-size: 0.8rem; }
+            .options-grid { grid-template-columns: 1fr; }
+            .question-container { padding: 1.5rem; }
+            .question-text { font-size: 1.2rem; }
+            .option { padding: 1rem; font-size: 0.95rem; }
+            .login-box, .results-box { width: 90%; }
+        }
+    </style>
+</head>
+<body>
+    <div class="login-modal" id="loginModal">
+        <div class="login-box">
+            <h2 class="login-title">QUIZ SEE-MG 2025<br>ESPECIALISTA EM EDUCAÇÃO BÁSICA</h2>
+            <input type="text" id="username" class="login-input" placeholder="Nome de usuário" required>
+            <input type="email" id="email" class="login-input" placeholder="E-mail (opcional)">
+            <div style="display: flex; justify-content: center; gap: 1rem; flex-wrap: wrap;">
+                <button class="cyber-button" id="loginBtn">ENTRAR</button>
+                <button class="cyber-button" id="dashboardBtn">Meu Desempenho</button>
+                <button class="cyber-button" id="portfolioBtn">Revisar Favoritas</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="login-modal" id="resultsModal">
+        <div class="results-box">
+            <h2 class="results-title">RELATÓRIO DE DESEMPENHO</h2>
+            <p class="result-stats" id="result-stats"></p>
+            <div style="display: flex; justify-content: center; gap: 1rem; flex-wrap: wrap;">
+                <button class="cyber-button" id="reviewBtn">Revisar Questões</button>
+                <button class="cyber-button" id="restartBtn">Reiniciar Quiz</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="login-modal" id="dashboardModal" style="display: none;">
+        <div class="results-box" style="width: 600px; max-width: 95%;">
+            <h2 class="results-title">PAINEL DE DESEMPENHO</h2>
+            <div id="dashboard-stats"></div>
+            <div style="margin-top: 1.5rem;">
+                <button class="cyber-button" id="closeDashboardBtn">Fechar</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="cyber-container" id="quizContainer" style="display: none;">
+        <h1>QUIZ SEE-MG 2025 <span style="color: var(--neon-pink);">ESPECIALISTA EM EDUCAÇÃO BÁSICA</span></h1>
+        <div class="progress-container">
+            <div class="progress-bar" id="progress"></div>
+        </div>
+        <div class="subject-tabs">
+            <div class="subject-tab active" data-subject="all">Todas</div>
+            <div class="subject-tab" data-subject="portugues">Língua Portuguesa</div>
+            <div class="subject-tab" data-subject="matematica">Matemática Aplicada</div>
+            <div class="subject-tab" data-subject="direitos-humanos">Direitos Humanos</div>
+            <div class="subject-tab" data-subject="legislacao">Legislação Educacional</div>
+            <div class="subject-tab" data-subject="especificos">Conhecimentos Específicos</div>
+        </div>
+        <div class="question-container" id="mainQuestionContainer">
+            <div class="question-text" id="question"></div>
+            <span id="favoriteBtn" class="favorite-icon">★</span>
+            <div class="options-grid" id="options"></div>
+            <div class="hint-button-container">
+                <button class="cyber-button" id="hintBtn">Dica</button>
+            </div>
+            <div class="hint-display" id="hintDisplay"></div>
+            <div class="feedback" id="feedbackDisplay"></div>
+            <div class="difficulty-rating" id="difficultyContainer">
+                <p>O que você achou desta questão?</p>
+                <div style="display: flex; justify-content: center; flex-wrap: wrap;">
+                    <button class="cyber-button facil-btn" data-difficulty="facil">Fácil</button>
+                    <button class="cyber-button bom-btn" data-difficulty="bom">Bom</button>
+                    <button class="cyber-button dificil-btn" data-difficulty="dificil">Difícil</button>
+                    <button class="cyber-button muito-dificil-btn" data-difficulty="muito-dificil">Muito Difícil</button>
+                </div>
+            </div>
+        </div>
+        <div class="navigation" id="navigationContainer">
+            <button class="cyber-button" id="prev-btn">← Anterior</button>
+            <button class="cyber-button" id="finish-quiz-btn">Finalizar Quiz</button>
+            <button class="cyber-button" id="next-btn">Próxima →</button>
+        </div>
+        <div class="hacker-terminal" id="terminal">
+            <p class="terminal-line">> Sistema de Quiz SEE-MG inicializado...</p>
+        </div>
+        <div class="leaderboard" id="leaderboard">
+            <h3>TOP 10 PONTUAÇÕES</h3>
+            <div id="scoresList"></div>
+        </div>
+    </div>
+    
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            
+            // Variáveis globais de estado
+            let questions = [];
+            let currentUser = null;
+            let currentQuestionIndex = 0;
+            let selectedSubject = "all";
+            let userAnswers = [];
+            let filteredQuestions = [];
+            let isReviewMode = false;
+            let errosParaRepetir = [];
+            let difficultyRatings = {};
+            let favoriteQuestions = [];
+            let allScores = [];
+
+            const elements = {
+                loginModal: document.getElementById('loginModal'),
+                resultsModal: document.getElementById('resultsModal'),
+                dashboardModal: document.getElementById('dashboardModal'),
+                quizContainer: document.getElementById('quizContainer'),
+                loginBtn: document.getElementById('loginBtn'),
+                dashboardBtn: document.getElementById('dashboardBtn'),
+                portfolioBtn: document.getElementById('portfolioBtn'),
+                closeDashboardBtn: document.getElementById('closeDashboardBtn'),
+                usernameInput: document.getElementById('username'),
+                emailInput: document.getElementById('email'),
+                terminal: document.getElementById('terminal'),
+                scoresList: document.getElementById('scoresList'),
+                questionEl: document.getElementById('question'),
+                optionsEl: document.getElementById('options'),
+                prevBtn: document.getElementById('prev-btn'),
+                nextBtn: document.getElementById('next-btn'),
+                finishQuizBtn: document.getElementById('finish-quiz-btn'),
+                progressEl: document.getElementById('progress'),
+                subjectTabs: document.querySelectorAll('.subject-tab'),
+                resultStatsEl: document.getElementById('result-stats'),
+                reviewBtn: document.getElementById('reviewBtn'),
+                restartBtn: document.getElementById('restartBtn'),
+                hintBtn: document.getElementById('hintBtn'),
+                hintDisplay: document.getElementById('hintDisplay'),
+                feedbackDisplay: document.getElementById('feedbackDisplay'),
+                difficultyContainer: document.getElementById('difficultyContainer'),
+                difficultyButtons: document.querySelectorAll('.difficulty-rating .cyber-button'),
+                dashboardStatsEl: document.getElementById('dashboard-stats'),
+                favoriteBtn: document.getElementById('favoriteBtn'),
+                navigationContainer: document.getElementById('navigationContainer')
+            };
+
+            function addTerminalLine(text) {
+                const p = document.createElement('p');
+                p.className = 'terminal-line';
+                p.innerHTML = text;
+                elements.terminal.appendChild(p);
+                elements.terminal.scrollTop = elements.terminal.scrollHeight;
+            }
+            
+            function loadFromLocalStorage() {
+                try {
+                    const savedScores = localStorage.getItem('quizScoresEEB');
+                    allScores = savedScores ? JSON.parse(savedScores) : [];
+                    const savedFavorites = localStorage.getItem('quizFavoritesEEB');
+                    favoriteQuestions = savedFavorites ? JSON.parse(savedFavorites) : [];
+                } catch (e) {
+                    console.error("Erro ao carregar dados do localStorage:", e);
+                    allScores = [];
+                    favoriteQuestions = [];
+                }
+            }
+
+            function saveDetailedScore(score, total, details) {
+                if (!currentUser) return;
+                const newScore = {
+                    username: currentUser.username,
+                    score,
+                    total,
+                    details,
+                    date: new Date().toISOString(),
+                    subject: selectedSubject
+                };
+                allScores.push(newScore);
+                localStorage.setItem('quizScoresEEB', JSON.stringify(allScores));
+                updateLeaderboard();
+            }
+
+            function updateLeaderboard() {
+                elements.scoresList.innerHTML = '';
+                const summaryScores = allScores.map(s => ({ username: s.username, score: s.score, total: s.total })).filter(s => s.total > 0);
+                const topScores = summaryScores.sort((a, b) => b.score - a.score).slice(0, 10);
+                if (topScores.length === 0) {
+                    elements.scoresList.innerHTML = '<p>Nenhuma pontuação registrada.</p>';
+                    return;
+                }
+                topScores.forEach((item, index) => {
+                    const scoreItem = document.createElement('div');
+                    scoreItem.className = 'leaderboard-item';
+                    scoreItem.innerHTML = `<span>${index + 1}. ${item.username}</span><span>${item.score}/${item.total}</span>`;
+                    elements.scoresList.appendChild(scoreItem);
+                });
+            }
+
+            function loadQuestion() {
+                if (filteredQuestions.length === 0 || currentQuestionIndex >= filteredQuestions.length) {
+                    finishQuiz();
+                    return;
+                }
+                const q = filteredQuestions[currentQuestionIndex];
+                elements.questionEl.innerHTML = `[${currentQuestionIndex + 1}/${filteredQuestions.length}] ${q.question}`;
+                elements.optionsEl.innerHTML = '';
+                q.options.forEach((option, index) => {
+                    const optionEl = document.createElement('div');
+                    optionEl.classList.add('option');
+                    optionEl.textContent = option;
+                    optionEl.style.cursor = 'pointer';
+                    optionEl.addEventListener('click', () => selectAnswer(index));
+                    elements.optionsEl.appendChild(optionEl);
+                });
+                elements.feedbackDisplay.style.display = 'none';
+                elements.hintDisplay.style.display = 'none';
+                elements.difficultyContainer.style.display = 'none';
+                elements.hintBtn.style.display = 'block';
+                elements.progressEl.style.width = `${((currentQuestionIndex + 1) / filteredQuestions.length) * 100}%`;
+                updateFavoriteIcon();
+                updateNavigationButtons();
+            }
+
+            function selectAnswer(selectedIndex) {
+                if (userAnswers[currentQuestionIndex] !== undefined) return;
+                userAnswers[currentQuestionIndex] = selectedIndex;
+                const q = filteredQuestions[currentQuestionIndex];
+                const isCorrect = selectedIndex === q.answer;
+                
+                elements.optionsEl.querySelectorAll('.option').forEach(opt => {
+                    const newOpt = opt.cloneNode(true);
+                    opt.parentNode.replaceChild(newOpt, opt);
+                    newOpt.style.cursor = 'default';
+                });
+
+                displayFeedback(selectedIndex);
+                elements.hintBtn.style.display = 'none';
+                elements.difficultyContainer.style.display = 'flex';
+            }
+
+            function displayFeedback(selectedIndex) {
+                const q = filteredQuestions[currentQuestionIndex];
+                const isCorrect = selectedIndex === q.answer;
+                elements.optionsEl.querySelectorAll('.option').forEach((option, index) => {
+                    if (index === q.answer) option.classList.add('correct');
+                    if (index === selectedIndex) option.classList.add(isCorrect ? 'selected' : 'incorrect');
+                });
+                let feedbackContent = isCorrect ? `✅ **Correto!**<br><br>` : `❌ **Incorreto.**<br><br>`;
+                feedbackContent += `A resposta correta é: "${q.options[q.answer]}".<br><br>${q.feedbackCompleto || "Justificativa não disponível."}`;
+                elements.feedbackDisplay.innerHTML = feedbackContent;
+                elements.feedbackDisplay.style.display = 'block';
+            }
+
+            function updateNavigationButtons() {
+                 prevBtn.disabled = currentQuestionIndex === 0;
+             if (currentQuestionIndex === filteredQuestions.length - 1) {
+                  nextBtn.style.display = 'none'; // Esconde o botão "Próxima"
+                  finishQuizBtn.style.display = 'block'; // Mostra o botão "Finalizar Quiz"
+            } else {
+                    nextBtn.style.display = 'block'; // Mostra o botão "Próxima"
+                    finishQuizBtn.style.display = 'none'; // Esconde o botão "Finalizar Quiz"
+                }
+            } 
+
+            function filterQuestionsBySubject() {
+                if (selectedSubject === "portfolio") {
+                    filteredQuestions = questions.filter(q => favoriteQuestions.includes(q.id));
+                } else if (selectedSubject === "all") {
+                    filteredQuestions = [...questions];
+                } else {
+                    filteredQuestions = questions.filter(q => q.subjects && q.subjects.includes(selectedSubject));
+                }
+            }
+            
+            function startQuiz() {
+                currentQuestionIndex = 0;
+                isReviewMode = false;
+                errosParaRepetir = [];
+                difficultyRatings = {};
+                filterQuestionsBySubject();
+                if (filteredQuestions.length > 0) {
+                    elements.quizContainer.style.display = 'block';
+                    elements.loginModal.style.display = 'none';
+                    elements.navigationContainer.style.display = 'flex';
+                    userAnswers = Array(filteredQuestions.length).fill(undefined);
+                    loadQuestion();
+                } else {
+                    alert(selectedSubject === "portfolio" 
+                        ? "Você ainda não favoritou nenhuma questão para revisar." 
+                        : "Nenhuma questão encontrada para esta matéria.");
+                }
+            }
+            
+            function finishQuiz() {
+                if(filteredQuestions.length === 0) {
+                    elements.quizContainer.style.display = 'none';
+                    elements.loginModal.style.display = 'flex';
+                    return;
+                }
+                let correctCount = 0;
+                const answerDetails = [];
+                filteredQuestions.forEach((q, index) => {
+                    const userAnswer = userAnswers[index];
+                    const isCorrect = userAnswer === q.answer;
+                    if (isCorrect) correctCount++;
+                    answerDetails.push({ questionId: q.id, subjects: q.subjects || [], userAnswer, correctAnswer: q.answer, isCorrect });
+                });
+                const total = filteredQuestions.length;
+                const percentage = total > 0 ? Math.round((correctCount / total) * 100) : 0;
+                elements.resultStatsEl.innerHTML = `Você acertou ${correctCount} de ${total} questões.<br> (${percentage}%)`;
+                if(total > 0 && selectedSubject !== 'portfolio') {
+                    saveDetailedScore(correctCount, total, answerDetails);
+                }
+                elements.quizContainer.style.display = 'none';
+                elements.resultsModal.style.display = 'flex';
+            }
+            
+            function toggleFavorite() {
+                const currentQ = filteredQuestions[currentQuestionIndex];
+                if (!currentQ) return;
+                const questionId = currentQ.id;
+                const favoriteIndex = favoriteQuestions.indexOf(questionId);
+                if (favoriteIndex > -1) {
+                    favoriteQuestions.splice(favoriteIndex, 1);
+                    addTerminalLine(`> Questão [${questionId}] removida do portfólio.`);
+                } else {
+                    favoriteQuestions.push(questionId);
+                    addTerminalLine(`> Questão [${questionId}] adicionada ao portfólio.`);
+                }
+                localStorage.setItem('quizFavoritesEEB', JSON.stringify(favoriteQuestions));
+                updateFavoriteIcon();
+            }
+
+            function updateFavoriteIcon() {
+                const currentQ = filteredQuestions[currentQuestionIndex];
+                if (elements.favoriteBtn && currentQ) {
+                    if (favoriteQuestions.includes(currentQ.id)) {
+                        elements.favoriteBtn.classList.add('favorited');
+                    } else {
+                        elements.favoriteBtn.classList.remove('favorited');
+                    }
+                }
+            }
+
+            function startPortfolioQuiz() {
+                const username = elements.usernameInput.value.trim();
+                if (!username) {
+                    alert("Por favor, digite um nome de usuário antes de iniciar.");
+                    return;
+                }
+                if (favoriteQuestions.length === 0) {
+                    alert("Você ainda não favoritou nenhuma questão para revisar!");
+                    return;
+                }
+                currentUser = { username, email: elements.emailInput.value.trim() || null };
+                selectedSubject = "portfolio";
+                addTerminalLine(`> Iniciando modo de revisão do Portfólio...`);
+                elements.subjectTabs.forEach(t => t.classList.remove('active'));
+                startQuiz();
+            }
+            
+            function showDashboard() {
+                const username = elements.usernameInput.value.trim();
+                if (!username) {
+                    alert('Por favor, digite seu nome de usuário para ver o desempenho.');
+                    return;
+                }
+                const userScores = allScores.filter(s => s.username === username);
+                if (userScores.length === 0) {
+                    elements.dashboardStatsEl.innerHTML = '<p>Nenhum dado de desempenho encontrado. Complete um quiz primeiro!</p>';
+                } else {
+                    const stats = calculateStats(userScores);
+                    displayStats(stats);
+                }
+                elements.dashboardModal.style.display = 'flex';
+            }
+
+            function getSubjectName(subjectKey) {
+                const tab = document.querySelector(`.subject-tab[data-subject="${subjectKey}"]`);
+                return tab ? tab.textContent : "Geral";
+            }
+
+            function calculateStats(userScores) {
+                const subjectStats = {};
+                let totalCorrect = 0;
+                let totalAttempted = 0;
+                userScores.forEach(score => {
+                    score.details.forEach(detail => {
+                        if(detail.userAnswer === undefined) return;
+                        totalAttempted++;
+                        if(detail.isCorrect) totalCorrect++;
+                        if(detail.subjects) {
+                            detail.subjects.forEach(subject => {
+                                if (!subjectStats[subject]) {
+                                    subjectStats[subject] = { correct: 0, total: 0, name: getSubjectName(subject) };
+                                }
+                                subjectStats[subject].total++;
+                                if (detail.isCorrect) subjectStats[subject].correct++;
+                            });
+                        }
+                    });
+                });
+                const overallPercentage = totalAttempted > 0 ? (totalCorrect / totalAttempted) * 100 : 0;
+                return {
+                    overall: { correct: totalCorrect, total: totalAttempted, percentage: overallPercentage.toFixed(1) },
+                    bySubject: subjectStats
+                };
+            }
+
+            function displayStats(stats) {
+                let tableHTML = `<p><strong>Desempenho Geral:</strong> ${stats.overall.correct} de ${stats.overall.total} acertos (${stats.overall.percentage}%)</p><table><thead><tr><th>Matéria</th><th>Acertos / Total</th><th>Percentual</th></tr></thead><tbody>`;
+                const sortedSubjects = Object.entries(stats.bySubject).sort(([,a], [,b]) => a.name.localeCompare(b.name));
+                for (const [subjectKey, data] of sortedSubjects) {
+                    const percentage = data.total > 0 ? ((data.correct / data.total) * 100).toFixed(1) : 0;
+                    tableHTML += `<tr><td>${data.name}</td><td>${data.correct} / ${data.total}</td><td><div class="progress-bar-stat"><div class="progress-fill" style="width: ${percentage}%;">${percentage}%</div></div></td></tr>`;
+                }
+                tableHTML += `</tbody></table>`;
+                elements.dashboardStatsEl.innerHTML = tableHTML;
+            }
+
+            function startReviewMode() {
+                isReviewMode = true;
+                currentQuestionIndex = 0;
+                loadReviewQuestion();
+            }
+
+            function loadReviewQuestion() {
+                if (currentQuestionIndex >= filteredQuestions.length) {
+                    elements.quizContainer.style.display = 'none';
+                    elements.resultsModal.style.display = 'flex';
+                    return;
+                }
+                const q = filteredQuestions[currentQuestionIndex];
+                elements.questionEl.textContent = `[Revisão ${currentQuestionIndex + 1}/${filteredQuestions.length}] ${q.question}`;
+                elements.optionsEl.innerHTML = '';
+                const selectedAnswer = userAnswers[currentQuestionIndex];
+                
+                q.options.forEach((option, index) => {
+                    const optionEl = document.createElement('div');
+                    optionEl.classList.add('option');
+                    optionEl.textContent = option;
+                    optionEl.style.cursor = 'default';
+                    if (index === q.answer) optionEl.classList.add('correct');
+                    if (index === selectedAnswer && selectedAnswer !== q.answer) optionEl.classList.add('incorrect');
+                    elements.optionsEl.appendChild(optionEl);
+                });
+
+                let feedbackContent = (selectedAnswer === undefined) ? `❓ **Não respondida.**<br><br>` : '';
+                feedbackContent += `A resposta correta é: "${q.options[q.answer]}".<br><br>${q.feedbackCompleto || "Justificativa não disponível."}`;
+                elements.feedbackDisplay.innerHTML = feedbackContent;
+                elements.feedbackDisplay.style.display = 'block';
+                elements.hintDisplay.style.display = 'none';
+                elements.hintBtn.style.display = 'none';
+                elements.difficultyContainer.style.display = 'none';
+                updateNavigationButtons();
+            }
+            
+            // --- Conectando os Event Listeners ---
+            elements.loginBtn.addEventListener('click', () => {
+                const username = elements.usernameInput.value.trim();
+                if (username) {
+                    currentUser = { username, email: elements.emailInput.value.trim() || null };
+                    selectedSubject = "all";
+                    addTerminalLine(`> Usuário autenticado: ${username}`);
+                    startQuiz();
+                } else {
+                    alert("Digite um nome de usuário!");
+                }
+            });
+
+            elements.portfolioBtn.addEventListener('click', startPortfolioQuiz);
+            elements.dashboardBtn.addEventListener('click', showDashboard);
+            elements.closeDashboardBtn.addEventListener('click', () => {
+                elements.dashboardModal.style.display = 'none';
+            });
+            elements.favoriteBtn.addEventListener('click', toggleFavorite);
+            
+            elements.nextBtn.addEventListener('click', () => {
+                if (currentQuestionIndex < filteredQuestions.length - 1) {
+                    currentQuestionIndex++;
+                    isReviewMode ? loadReviewQuestion() : loadQuestion();
+                } else {
+                    isReviewMode ? (elements.quizContainer.style.display = 'none', elements.resultsModal.style.display = 'flex') : finishQuiz();
+                }
+            });
+
+            elements.prevBtn.addEventListener('click', () => {
+                if (currentQuestionIndex > 0) {
+                    currentQuestionIndex--;
+                     isReviewMode ? loadReviewQuestion() : loadQuestion();
+                }
+            });
+
+            elements.finishQuizBtn.addEventListener('click', finishQuiz);
+
+            elements.difficultyButtons.forEach(button => {
+                button.addEventListener('click', (e) => {
+                    const difficulty = e.target.dataset.difficulty;
+                    const questionId = filteredQuestions[currentQuestionIndex].id;
+                    difficultyRatings[questionId] = difficulty;
+                    addTerminalLine(`> Questão avaliada como: ${difficulty}.`);
+                    elements.difficultyContainer.style.display = 'none';
+                });
+            });
+
+            elements.hintBtn.addEventListener('click', () => {
+                const q = filteredQuestions[currentQuestionIndex];
+                if (q?.hint) {
+                    elements.hintDisplay.innerHTML = `💡 **Dica:** ${q.hint}`;
+                    elements.hintDisplay.style.display = 'block';
+                } else {
+                    elements.hintDisplay.innerHTML = `Não há dica disponível.`;
+                    elements.hintDisplay.style.display = 'block';
+                }
+            });
+            
+            elements.reviewBtn.addEventListener('click', () => {
+                elements.resultsModal.style.display = 'none';
+                startReviewMode();
+            });
+
+            elements.restartBtn.addEventListener('click', () => {
+                elements.resultsModal.style.display = 'none';
+                elements.loginModal.style.display = 'flex';
+                addTerminalLine('> Reiniciando sistema...');
+            });
+            
+            elements.subjectTabs.forEach(tab => {
+                tab.addEventListener('click', () => {
+                    elements.subjectTabs.forEach(t => t.classList.remove('active'));
+                    tab.classList.add('active');
+                    selectedSubject = tab.dataset.subject;
+                    addTerminalLine(`> Filtro ativado: ${tab.textContent}`);
+                    startQuiz();
+                });
+            });
+
+             // --- Inicialização da Aplicação ---
+             loadFromLocalStorage();
+             fetch('questions_eeb.json')
+                .then(response => {
+                    if (!response.ok) throw new Error(`Erro de rede: ${response.statusText}`);
+                    return response.json();
+                })
+                .then(data => {
+                    questions = data.map((q, index) => ({ ...q, id: `q_eeb_${index}` }));
+                    addTerminalLine("> Banco de questões SEE-MG carregado.");
+                    elements.loginModal.style.display = 'flex';
+                    updateLeaderboard();
+                    addTerminalLine("> Aguardando autenticação <span class='blink'>_</span>");
+                })
+                .catch(error => {
+                    console.error('Erro ao carregar as questões:', error);
+                    addTerminalLine(`> ERRO FATAL: Não foi possível carregar 'questions_eeb.json'.`);
+                });
+        });
+    </script>
+</body>
+</html>
