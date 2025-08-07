@@ -5913,8 +5913,1050 @@
     "hint": "Como todas as letras são distintas, trata-se de uma permutação simples de n elementos (n!).",
     "feedbackCompleto": "A palavra 'EDITAL' possui 6 letras distintas. O número de anagramas é a permutação de 6 elementos, que é calculada por 6! (6 fatorial). 6! = 6 × 5 × 4 × 3 × 2 × 1 = 720.",
     "subjects": ["raciocinio-logico"]
+  },
+  {
+    "question": "De acordo com a LDB (Lei nº 9.394/96), a educação escolar compõe-se de quais níveis?",
+    "options": [
+      "Educação Infantil e Ensino Fundamental.",
+      "Educação Básica e Educação Superior.",
+      "Ensino Fundamental e Ensino Médio.",
+      "Educação Básica e Educação Profissional."
+    ],
+    "answer": 1,
+    "hint": "Pense nas duas grandes etapas da formação educacional formal.",
+    "feedbackCompleto": "O Art. 21 da LDB estabelece que a educação escolar se compõe de dois níveis: I - educação básica (formada pela educação infantil, ensino fundamental e ensino médio); e II - educação superior.",
+    "subjects": ["especificos", "legislacao"]
+  },
+  {
+    "question": "A Base Nacional Comum Curricular (BNCC) tem caráter:",
+    "options": [
+      "Facultativo para as escolas privadas.",
+      "Normativo, definindo o conjunto de aprendizagens essenciais para todos os alunos.",
+      "Deliberativo, substituindo a autonomia das escolas na elaboração do PPP.",
+      "Sugestivo, apresentando apenas recomendações de conteúdos."
+    ],
+    "answer": 1,
+    "hint": "Pense se a BNCC é uma recomendação ou uma norma obrigatória para os currículos.",
+    "feedbackCompleto": "A BNCC é um documento de caráter normativo que define o conjunto orgânico e progressivo de aprendizagens essenciais que todos os alunos devem desenvolver ao longo das etapas e modalidades da Educação Básica. Ela serve como referência obrigatória para a elaboração dos currículos.",
+    "subjects": ["especificos"]
+  },
+  {
+    "question": "Qual a principal finalidade da avaliação da aprendizagem na perspectiva de um currículo inclusivo?",
+    "options": [
+      "Classificar e selecionar os alunos mais aptos.",
+      "Apenas atribuir notas e conceitos para fins de aprovação.",
+      "Subsidiar a prática pedagógica, identificando as necessidades dos estudantes e orientando as intervenções para garantir o direito à aprendizagem de todos.",
+      "Cumprir uma exigência burocrática do sistema de ensino."
+    ],
+    "answer": 2,
+    "hint": "Pense na avaliação como uma ferramenta a serviço da aprendizagem, e não da exclusão.",
+    "feedbackCompleto": "Numa perspectiva inclusiva, a avaliação deve ser um instrumento diagnóstico e processual. Sua principal finalidade é fornecer informações sobre o processo de aprendizagem do aluno para que o professor e o especialista possam planejar intervenções pedagógicas adequadas, removendo barreiras e garantindo que todos, com suas singularidades, possam aprender.",
+    "subjects": ["especificos"]
+  },
+  {
+    "question": "O que a interdisciplinaridade busca promover no trabalho pedagógico?",
+    "options": [
+      "A fragmentação do conhecimento em disciplinas isoladas.",
+      "O diálogo e a integração entre diferentes áreas do conhecimento para uma compreensão mais ampla e contextualizada da realidade.",
+      "A substituição dos conteúdos curriculares por temas livres.",
+      "A priorização de uma única disciplina sobre as demais."
+    ],
+    "answer": 1,
+    "hint": "Pense em construir 'pontes' entre as matérias para entender um fenômeno complexo.",
+    "feedbackCompleto": "A interdisciplinaridade é uma abordagem que busca superar a fragmentação do conhecimento. Ela promove a integração e a articulação entre os saberes de diferentes disciplinas para analisar um mesmo objeto de estudo, permitindo uma compreensão mais complexa, crítica e conectada com a realidade dos estudantes.",
+    "subjects": ["especificos"]
+  },
+  {
+    "question": "A Política de Educação Integral, conforme as diretrizes atuais, tem como foco principal:",
+    "options": [
+      "Apenas a ampliação da jornada escolar para todos os alunos.",
+      "A formação integral do estudante, considerando suas dimensões intelectual, física, emocional, social e cultural.",
+      "O reforço escolar exclusivo nas disciplinas de Português e Matemática.",
+      "A preparação dos alunos apenas para o mercado de trabalho."
+    ],
+    "answer": 1,
+    "hint": "Pense na diferença entre 'tempo integral' e 'educação integral'.",
+    "feedbackCompleto": "A Educação Integral não se resume a passar mais tempo na escola. Seu conceito central é o desenvolvimento pleno do estudante em todas as suas dimensões. Isso implica em um currículo que articula diferentes tempos, espaços e saberes, visando uma formação humana completa.",
+    "subjects": ["especificos"]
+  },
+  {
+    "question": "Qual o papel do Especialista em Educação Básica (EEB) no processo de construção do Projeto Político Pedagógico (PPP)?",
+    "options": [
+      "Redigir o documento sozinho com base em suas convicções.",
+      "Articular, coordenar e mediar o processo de discussão e elaboração coletiva do PPP, garantindo a participação de toda a comunidade escolar.",
+      "Apenas garantir que o PPP cumpra as normas burocráticas.",
+      "Não se envolver, pois é uma atribuição exclusiva do diretor da escola."
+    ],
+    "answer": 1,
+    "hint": "Pense no EEB como o principal mobilizador e articulador pedagógico da escola.",
+    "feedbackCompleto": "O EEB é a figura central na articulação da construção do PPP. Seu papel é o de coordenar o processo, garantindo que ele seja democrático e participativo. Ele deve mediar os debates, sistematizar as ideias e assegurar que o documento final reflita a identidade da escola e seja um instrumento efetivo de planejamento e transformação.",
+    "subjects": ["especificos"]
+  },
+  {
+    "question": "A Lei Brasileira de Inclusão (Lei nº 13.146/2015) define 'adaptações razoáveis' como:",
+    "options": [
+      "Modificações que impõem um ônus desproporcional e indevido à instituição.",
+      "Modificações e ajustes necessários que não acarretem ônus desproporcional e indevido, a fim de assegurar que a pessoa com deficiência possa gozar de seus direitos em igualdade de condições.",
+      "A criação de um currículo totalmente separado para o aluno com deficiência.",
+      "A isenção do aluno de todas as atividades escolares."
+    ],
+    "answer": 1,
+    "hint": "Pense em ajustes que são 'razoáveis' de serem feitos para garantir a inclusão, sem inviabilizar a instituição.",
+    "feedbackCompleto": "Conforme o Art. 3º, VI, da Lei nº 13.146/2015, adaptações razoáveis são 'adaptações, modificações e ajustes necessários e adequados que não acarretem ônus desproporcional e indevido, quando requeridos em cada caso, a fim de assegurar que a pessoa com deficiência possa gozar ou exercer, em igualdade de condições e oportunidades com as demais pessoas, todos os direitos e liberdades fundamentais'.",
+    "subjects": ["especificos", "direitos-humanos"]
+  },
+  {
+    "question": "O que caracteriza a 'gestão democrática' do ensino público, segundo a LDB e a Constituição?",
+    "options": [
+      "A eleição direta para todos os cargos da escola, incluindo professores.",
+      "A participação dos profissionais da educação na elaboração do projeto pedagógico da escola e a participação das comunidades escolar e local em conselhos escolares ou equivalentes.",
+      "A autonomia total da escola em relação ao sistema de ensino.",
+      "A tomada de todas as decisões exclusivamente pelo diretor da escola."
+    ],
+    "answer": 1,
+    "hint": "Pense nos dois pilares da gestão democrática: a participação dos profissionais e a participação da comunidade.",
+    "feedbackCompleto": "A gestão democrática do ensino público, conforme o Art. 14 da LDB, se dá com base em dois princípios fundamentais: I - participação dos profissionais da educação na elaboração do projeto pedagógico da escola; e II - participação das comunidades escolar e local em conselhos escolares ou equivalentes.",
+    "subjects": ["especificos", "legislacao"]
+  },
+  {
+    "question": "Qual a principal finalidade da Reunião de Pais na escola?",
+    "options": [
+      "Apenas comunicar as notas e a situação de indisciplina dos alunos.",
+      "Arrecadar fundos para a caixa escolar.",
+      "Fortalecer a parceria entre família e escola, promovendo o diálogo sobre o processo de aprendizagem e o desenvolvimento dos alunos.",
+      "Cumprir uma formalidade do calendário letivo."
+    ],
+    "answer": 2,
+    "hint": "Pense na reunião como um momento de 'parceria' em prol do aluno.",
+    "feedbackCompleto": "A Reunião de Pais é um instrumento fundamental da gestão democrática. Seu objetivo principal deve ser o de estreitar os laços entre a família e a escola, promovendo um diálogo construtivo sobre o desenvolvimento integral dos estudantes, compartilhando informações sobre o processo pedagógico e buscando estratégias conjuntas para apoiar a aprendizagem.",
+    "subjects": ["especificos"]
+  },
+  {
+    "question": "O que são as '10 Competências Gerais' da BNCC?",
+    "options": [
+      "Uma lista de conteúdos a serem memorizados pelos alunos.",
+      "Um conjunto de conhecimentos, habilidades, atitudes e valores que devem ser desenvolvidos de forma integrada ao longo de toda a Educação Básica.",
+      "Critérios para a avaliação de desempenho dos professores.",
+      "Diretrizes para a organização administrativa das escolas."
+    ],
+    "answer": 1,
+    "hint": "Pense nelas como os grandes objetivos de formação humana que o currículo deve buscar.",
+    "feedbackCompleto": "As 10 Competências Gerais da BNCC representam o conjunto de aprendizagens essenciais e indispensáveis a que todos os estudantes brasileiros devem ter acesso. Elas visam garantir o desenvolvimento integral, mobilizando conhecimentos, habilidades, atitudes e valores para resolver as demandas complexas da vida contemporânea.",
+    "subjects": ["especificos"]
+  },
+  {
+    "question": "Qual o papel do Especialista em Educação Básica (EEB) no acompanhamento do plano de ensino e do plano de aula dos professores?",
+    "options": [
+      "Apenas arquivar os planos para fins de fiscalização.",
+      "Orientar os professores para que seus planejamentos estejam alinhados ao PPP e ao currículo, sejam exequíveis e contemplem estratégias diversificadas para a aprendizagem.",
+      "Reescrever os planos que considerar inadequados.",
+      "Não se envolver, pois o planejamento é de total autonomia do professor."
+    ],
+    "answer": 1,
+    "hint": "Pense no EEB como um parceiro que ajuda a qualificar o planejamento do professor.",
+    "feedbackCompleto": "O EEB tem a função de supervisor pedagógico. Ele deve acompanhar e orientar o planejamento docente, garantindo que os planos de ensino e de aula estejam coerentes com o PPP da escola e com as diretrizes curriculares. Seu papel é de mediação e formação, ajudando o professor a refletir e aprimorar sua prática.",
+    "subjects": ["especificos"]
+  },
+  {
+    "question": "A avaliação externa, como o SIMAVE em Minas Gerais, serve para:",
+    "options": [
+      "Substituir a avaliação feita pelo professor em sala de aula.",
+      "Classificar e punir as escolas com baixo desempenho.",
+      "Produzir um diagnóstico em larga escala sobre a qualidade do ensino, fornecendo dados para que o sistema e as escolas possam refletir e aprimorar suas políticas e práticas.",
+      "Aprovar ou reprovar os alunos individualmente."
+    ],
+    "answer": 2,
+    "hint": "Pense na avaliação externa como um 'termômetro' do sistema, que ajuda a identificar onde estão os desafios.",
+    "feedbackCompleto": "As avaliações externas, como o SIMAVE, não têm caráter classificatório ou punitivo. Sua principal função é fornecer um diagnóstico sobre o desempenho dos estudantes e a equidade do sistema de ensino, gerando informações que são fundamentais para a formulação de políticas públicas e para que cada escola possa avaliar seu trabalho e planejar ações de melhoria.",
+    "subjects": ["especificos"]
+  },
+  {
+    "question": "Qual a relação entre o Projeto Político Pedagógico (PPP) e a autonomia da escola?",
+    "options": [
+      "O PPP restringe a autonomia da escola, impondo um modelo a ser seguido.",
+      "A autonomia da escola é o princípio que permite à comunidade escolar construir seu próprio PPP, definindo sua identidade e seu plano de trabalho.",
+      "O PPP é elaborado pela Secretaria de Educação e enviado pronto para as escolas.",
+      "A autonomia da escola refere-se apenas à gestão de recursos financeiros."
+    ],
+    "answer": 1,
+    "hint": "Pense no PPP como a maior expressão da autonomia da escola.",
+    "feedbackCompleto": "A autonomia da escola (pedagógica, administrativa e financeira), garantida pela LDB, é o que possibilita a construção do Projeto Político Pedagógico. É através do PPP que a escola exerce sua autonomia, definindo, com a participação de sua comunidade, sua própria identidade, seus objetivos e suas estratégias para garantir a qualidade do ensino.",
+    "subjects": ["especificos"]
+  },
+  {
+    "question": "O que o currículo, na perspectiva do direito à aprendizagem, deve garantir?",
+    "options": [
+      "Apenas a transmissão de um conjunto fixo de conteúdos.",
+      "O desenvolvimento de competências e habilidades essenciais para todos os alunos, respeitando suas diversidades e criando condições para que cada um possa aprender e se desenvolver plenamente.",
+      "Apenas a preparação para o mercado de trabalho.",
+      "A uniformidade total dos métodos de ensino em todas as escolas."
+    ],
+    "answer": 1,
+    "hint": "Pense no currículo como um instrumento para garantir que 'todos' aprendam.",
+    "feedbackCompleto": "Em uma perspectiva de direitos, o currículo não é apenas uma lista de conteúdos. Ele deve ser concebido como um conjunto de experiências de aprendizagem que garantam a todos os estudantes, sem exceção, o desenvolvimento de suas potencialidades. Isso implica em um currículo flexível, inclusivo e que valorize a diversidade.",
+    "subjects": ["especificos"]
+  },
+  {
+    "question": "Qual das seguintes ações NÃO corresponde a uma atribuição do Especialista em Educação Básica (EEB)?",
+    "options": [
+      "Coordenar a elaboração e a execução da proposta pedagógica da escola.",
+      "Orientar, acompanhar e avaliar o trabalho dos professores.",
+      "Realizar a inspeção técnica e legal de outras unidades escolares.",
+      "Articular a integração entre a escola, as famílias e a comunidade."
+    ],
+    "answer": 2,
+    "hint": "Pense na diferença entre o trabalho pedagógico 'dentro' da escola (EEB) e a fiscalização 'externa' (Inspetor).",
+    "feedbackCompleto": "A inspeção de escolas é uma atribuição do cargo de Analista Educacional na função de Inspetor Escolar (ANE-IE), que atua de forma externa às unidades. O Especialista em Educação Básica (EEB) atua no âmbito da própria escola, com foco na supervisão e orientação do processo pedagógico interno.",
+    "subjects": ["especificos"]
+  },
+  {
+    "question": "A interdisciplinaridade e a contextualização são princípios pedagógicos que visam, principalmente:",
+    "options": [
+      "Aumentar a quantidade de conteúdo a ser memorizado.",
+      "Tornar a aprendizagem mais significativa, conectando os conhecimentos escolares com a realidade e as experiências dos alunos.",
+      "Facilitar o trabalho do professor, reduzindo o planejamento.",
+      "Cumprir uma exigência burocrática dos documentos oficiais."
+    ],
+    "answer": 1,
+    "hint": "Pense em como tornar o aprendizado menos abstrato e mais conectado com a vida.",
+    "feedbackCompleto": "A interdisciplinaridade (diálogo entre as disciplinas) e a contextualização (relação do conteúdo com a realidade do aluno) são estratégias pedagógicas fundamentais para tornar a aprendizagem mais significativa. Ao conectar os saberes escolares com o mundo real, o aluno compreende a relevância do que está aprendendo, o que aumenta seu engajamento e a profundidade de sua compreensão.",
+    "subjects": ["especificos"]
+  },
+  {
+    "question": "O que a BNCC propõe em relação à Educação Infantil?",
+    "options": [
+      "A antecipação da alfabetização e dos conteúdos do Ensino Fundamental.",
+      "A organização do currículo por meio de campos de experiências, com base nos direitos de aprendizagem e desenvolvimento (conviver, brincar, participar, explorar, expressar, conhecer-se).",
+      "Um currículo baseado em disciplinas, como Português e Matemática.",
+      "A dispensa da necessidade de avaliação nessa etapa."
+    ],
+    "answer": 1,
+    "hint": "Pense na abordagem da BNCC para a primeira infância, focada nas interações e brincadeiras.",
+    "feedbackCompleto": "A BNCC para a Educação Infantil rompe com a lógica disciplinar e se estrutura em cinco campos de experiências, que valorizam as interações e a brincadeira como eixos estruturantes. Todo o planejamento deve se basear nos seis direitos de aprendizagem e desenvolvimento: conviver, brincar, participar, explorar, expressar e conhecer-se.",
+    "subjects": ["especificos", "legislacao"]
+  },
+  {
+    "question": "Na gestão da sala de aula, qual o papel do Especialista em Educação Básica?",
+    "options": [
+      "Intervir diretamente na sala de aula, substituindo o professor.",
+      "Apenas observar as aulas sem oferecer retorno ao professor.",
+      "Assessorar e apoiar o professor na reflexão sobre sua prática, na busca por novas estratégias pedagógicas e na mediação de conflitos.",
+      "Definir as regras de disciplina que o professor deve aplicar."
+    ],
+    "answer": 2,
+    "hint": "Pense no EEB como um parceiro do professor, que ajuda a pensar e aprimorar a prática.",
+    "feedbackCompleto": "O EEB não deve atuar como um fiscal, mas como um parceiro formador do professor. Em relação à gestão da sala de aula, seu papel é o de observar, dialogar e refletir junto com o docente sobre os desafios, ajudando-o a encontrar as melhores estratégias para organizar o ambiente, o tempo e as interações, a fim de potencializar a aprendizagem de todos.",
+    "subjects": ["especificos"]
+  },
+  {
+    "question": "A avaliação da aprendizagem, para ser inclusiva, deve considerar:",
+    "options": [
+      "Apenas o resultado do aluno em uma prova escrita padronizada.",
+      "As diversas linguagens e formas de expressão do aluno, utilizando múltiplos instrumentos e permitindo adaptações.",
+      "A comparação constante entre o desempenho dos alunos da turma.",
+      "Apenas o comportamento do aluno em sala de aula."
+    ],
+    "answer": 1,
+    "hint": "Pense que alunos diferentes podem demonstrar o que aprenderam de formas diferentes.",
+    "feedbackCompleto": "Uma avaliação inclusiva reconhece que os alunos são diferentes e aprendem de maneiras diferentes. Portanto, ela deve ir além da prova escrita e utilizar uma diversidade de instrumentos (trabalhos em grupo, apresentações orais, portfólios, observação) e permitir adaptações (mais tempo, recursos de acessibilidade) para que cada estudante possa demonstrar seu conhecimento da melhor forma.",
+    "subjects": ["especificos"]
+  },
+  {
+    "question": "O que o Plano de Ensino, no contexto da organização do trabalho pedagógico, deve detalhar?",
+    "options": [
+      "Apenas a lista de conteúdos a serem transmitidos.",
+      "As atividades de cada aula, dia a dia.",
+      "O planejamento de uma disciplina ou área para um determinado período (ano ou semestre), detalhando objetivos, conteúdos, metodologia e critérios de avaliação.",
+      "A filosofia e os valores da escola."
+    ],
+    "answer": 2,
+    "hint": "Pense no plano de ensino como o 'roteiro' do professor para um período letivo, mais detalhado que o PPP, mas menos que o plano de aula.",
+    "feedbackCompleto": "O Plano de Ensino é o documento em que o professor (ou o grupo de professores de uma área) detalha como o currículo previsto no PPP será trabalhado ao longo de um ano ou semestre. Ele deve conter os objetivos de aprendizagem, os conteúdos a serem abordados, as estratégias metodológicas e os critérios e instrumentos de avaliação. Ele orienta a elaboração dos Planos de Aula.",
+    "subjects": ["especificos"]
+  },
+  {
+    "question": "A Lei de Diretrizes e Bases da Educação Nacional (LDB - Lei nº 9.394/1996) estabelece que a educação é dever:",
+    "options": [
+      "Apenas do Estado.",
+      "Apenas da família.",
+      "Da família e do Estado, inspirada nos princípios de liberdade e nos ideais de solidariedade humana.",
+      "Apenas das instituições de ensino privadas."
+    ],
+    "answer": 2,
+    "hint": "Pense na responsabilidade compartilhada pela formação do indivíduo.",
+    "feedbackCompleto": "O Art. 2º da LDB é claro ao estabelecer que 'A educação, dever da família e do Estado, inspirada nos princípios de liberdade e nos ideais de solidariedade humana, tem por finalidade o pleno desenvolvimento do educando, seu preparo para o exercício da cidadania e sua qualificação para o trabalho'.",
+    "subjects": ["legislacao"]
+  },
+  {
+    "question": "Conforme a Constituição Federal (Art. 212), a União aplicará, anualmente, nunca menos de ______, e os Estados, o Distrito Federal e os Municípios _______, no mínimo, da receita resultante de impostos, na manutenção e desenvolvimento do ensino.",
+    "options": [
+      "15% e 20%",
+      "18% e 25%",
+      "20% e 30%",
+      "25% e 18%"
+    ],
+    "answer": 1,
+    "hint": "Lembre-se dos percentuais mínimos de vinculação de receitas de impostos para a educação.",
+    "feedbackCompleto": "O Art. 212 da Constituição Federal estabelece os percentuais mínimos de vinculação de receitas para a educação. A União deve aplicar, no mínimo, 18% (dezoito por cento), e os Estados, o Distrito Federal e os Municípios, 25% (vinte e cinco por cento), no mínimo, da receita resultante de impostos, compreendida a proveniente de transferências.",
+    "subjects": ["legislacao", "direitos-humanos"]
+  },
+  {
+    "question": "O Plano Nacional de Educação (PNE - Lei nº 13.005/2014) tem vigência de:",
+    "options": [
+      "4 anos, coincidindo com o PPA.",
+      "5 anos, sendo revisado a cada eleição.",
+      "10 anos (decenal).",
+      "Prazo indeterminado."
+    ],
+    "answer": 2,
+    "hint": "Pense no PNE como um plano de longo prazo para a educação brasileira.",
+    "feedbackCompleto": "O Plano Nacional de Educação (PNE) tem vigência decenal, ou seja, de 10 anos. Ele estabelece diretrizes, metas e estratégias para a política educacional no período, devendo ser seguido por todos os entes da federação. O plano atual tem vigência de 2014 a 2024.",
+    "subjects": ["legislacao", "politicas"]
+  },
+  {
+    "question": "A Lei nº 869/1952 (Estatuto dos Funcionários Públicos Civis de MG) estabelece que o servidor adquire estabilidade após:",
+    "options": [
+      "2 anos de efetivo exercício.",
+      "3 anos de efetivo exercício.",
+      "5 anos de efetivo exercício.",
+      "A aprovação no concurso público."
+    ],
+    "answer": 1,
+    "hint": "Atenção, a lei estadual foi recepcionada pela Constituição Federal, que define o prazo atual.",
+    "feedbackCompleto": "Embora a lei estadual seja mais antiga, o prazo para aquisição de estabilidade foi alterado pela Emenda Constitucional nº 19/1998, que fixou o período em 3 anos de efetivo exercício. Conforme o Art. 41 da Constituição Federal, 'São estáveis após três anos de efetivo exercício os servidores nomeados para cargo de provimento efetivo em virtude de concurso público'.",
+    "subjects": ["legislacao"]
+  },
+  {
+    "question": "Qual o principal objetivo do Plano Estadual de Educação (PEE - Lei nº 23.197/2018) de Minas Gerais?",
+    "options": [
+      "Substituir o Plano Nacional de Educação.",
+      "Apenas definir o calendário escolar do estado.",
+      "Articular o sistema estadual de educação em consonância com o PNE, estabelecendo metas e estratégias para a política educacional de Minas Gerais para o período de 10 anos.",
+      "Regulamentar a contratação de professores."
+    ],
+    "answer": 2,
+    "hint": "Pense no PEE como a 'tradução' do PNE para a realidade de Minas Gerais.",
+    "feedbackCompleto": "O Plano Estadual de Educação (PEE) é o instrumento que alinha a política educacional do estado de Minas Gerais às diretrizes e metas do Plano Nacional de Educação (PNE). Ele estabelece metas e estratégias específicas para a realidade mineira, com vigência também decenal.",
+    "subjects": ["legislacao"]
+  },
+  {
+    "question": "Segundo a LDB, a organização da educação básica em séries anuais, períodos semestrais, ciclos, ou alternância regular de períodos de estudos é uma incumbência:",
+    "options": [
+      "Exclusiva do Ministério da Educação.",
+      "Dos sistemas de ensino, que têm a liberdade de se organizar de diferentes formas.",
+      "Definida pelo Conselho Nacional de Educação para todas as escolas.",
+      "Dos pais e responsáveis dos alunos."
+    ],
+    "answer": 1,
+    "hint": "Pense na flexibilidade que a LDB dá aos sistemas de ensino para organizarem sua estrutura pedagógica.",
+    "feedbackCompleto": "O Art. 23 da LDB confere aos sistemas de ensino a flexibilidade para organizar a educação básica de diversas formas (séries, ciclos, etc.), de acordo com o interesse do processo de aprendizagem, permitindo a adaptação às realidades locais e às diferentes propostas pedagógicas.",
+    "subjects": ["legislacao"]
+  },
+  {
+    "question": "O que o Decreto nº 46.644/2014 (Código de Conduta Ética do Agente Público de MG) busca promover?",
+    "options": [
+      "Apenas a punição de servidores por faltas graves.",
+      "Um padrão de comportamento ético e moral para os agentes públicos estaduais, orientando sua conduta para a probidade, o decoro e a eficiência.",
+      "A flexibilização das regras de contratação pública.",
+      "Aumentar a burocracia no serviço público."
+    ],
+    "answer": 1,
+    "hint": "Pense em um guia de 'bom comportamento' para o servidor público estadual.",
+    "feedbackCompleto": "O Código de Conduta Ética do Agente Público e da Alta Administração Estadual visa estabelecer os princípios e normas de conduta ética que devem nortear a atuação dos servidores do Poder Executivo de Minas Gerais. Ele serve como um guia para promover a moralidade, a transparência e a integridade no serviço público.",
+    "subjects": ["legislacao"]
+  },
+  {
+    "question": "A Constituição Federal, em seu Art. 206, estabelece os princípios do ensino. Qual dos seguintes NÃO é um princípio do ensino listado nesse artigo?",
+    "options": [
+      "Igualdade de condições para o acesso e permanência na escola.",
+      "Liberdade de aprender, ensinar, pesquisar e divulgar o pensamento, a arte e o saber.",
+      "Gestão democrática do ensino público, na forma da lei.",
+      "Obrigatoriedade da matrícula na rede privada de ensino."
+    ],
+    "answer": 3,
+    "hint": "Pense nos pilares que garantem um ensino público, gratuito e de qualidade.",
+    "feedbackCompleto": "A obrigatoriedade da matrícula na rede privada é contrária ao princípio da gratuidade do ensino público em estabelecimentos oficiais (Art. 206, IV). Os outros itens são princípios expressos no Art. 206 da Constituição: I - igualdade de condições...; II - liberdade de aprender...; VI - gestão democrática...",
+    "subjects": ["legislacao", "direitos-humanos"]
+  },
+  {
+    "question": "Qual a principal finalidade da Base Nacional Comum Curricular (BNCC)?",
+    "options": [
+      "Definir um currículo único e engessado para todas as escolas do país.",
+      "Estabelecer o conjunto de aprendizagens essenciais que todos os alunos devem desenvolver ao longo da Educação Básica, servindo como referência para a elaboração dos currículos.",
+      "Substituir o papel do professor na elaboração do planejamento de aula.",
+      "Avaliar o desempenho financeiro das escolas."
+    ],
+    "answer": 1,
+    "hint": "Pense na BNCC como uma 'referência' nacional, e não como um 'currículo' pronto.",
+    "feedbackCompleto": "A BNCC é um documento normativo que define as aprendizagens essenciais que todos os estudantes brasileiros têm o direito de adquirir. Ela não é um currículo, mas uma referência obrigatória para a elaboração e adequação dos currículos das redes de ensino e das propostas pedagógicas das escolas, respeitando a diversidade regional.",
+    "subjects": ["legislacao", "especificos"]
+  },
+  {
+    "question": "A Lei nº 7.109/1977 (Estatuto do Pessoal do Magistério de MG) estabelece os direitos e deveres dos profissionais da educação. Um dos deveres do professor, segundo o estatuto, é:",
+    "options": [
+      "Participar da elaboração da proposta pedagógica do estabelecimento de ensino.",
+      "Receber remuneração condigna.",
+      "Ter liberdade de cátedra.",
+      "Afastar-se para capacitação profissional."
+    ],
+    "answer": 0,
+    "hint": "Pense na diferença entre um 'direito' (algo que se recebe) e um 'dever' (algo que se deve fazer).",
+    "feedbackCompleto": "Participar da elaboração da proposta pedagógica é um dever do pessoal do magistério, conforme previsto no Art. 195, I, da Lei nº 7.109/1977. As outras opções (remuneração, liberdade de cátedra, afastamento) são direitos assegurados aos profissionais da educação.",
+    "subjects": ["legislacao"]
+  },
+  {
+    "question": "Qual o principal objetivo do Projeto Político Pedagógico (PPP)?",
+    "options": [
+      "Ser um documento burocrático para cumprir exigências legais.",
+      "Definir a identidade da escola, seus objetivos, metas e as ações que serão realizadas para alcançá-los, de forma democrática e participativa.",
+      "Estabelecer o calendário de provas e eventos da escola.",
+      "Listar o nome de todos os alunos e professores."
+    ],
+    "answer": 1,
+    "hint": "É o 'mapa' que guia todas as ações da escola, construído por sua comunidade.",
+    "feedbackCompleto": "O PPP é o documento que norteia todas as práticas da escola. Ele reflete a identidade da comunidade escolar, define a missão, os objetivos pedagógicos e as estratégias para alcançá-los, devendo ser elaborado com a participação de todos (gestores, professores, alunos, pais e funcionários) para garantir sua legitimidade e eficácia.",
+    "subjects": ["especificos"]
+  },
+  {
+    "question": "A avaliação da aprendizagem na perspectiva de um currículo inclusivo deve ser:",
+    "options": [
+      "Padronizada e classificatória, aplicando o mesmo teste para todos sem adaptações.",
+      "Focada apenas no resultado final, por meio de uma única prova anual.",
+      "Contínua, processual e formativa, utilizando múltiplos instrumentos e considerando as singularidades e os diferentes ritmos de aprendizagem dos estudantes.",
+      "Responsabilidade exclusiva do Especialista em Educação Básica."
+    ],
+    "answer": 2,
+    "hint": "Pense em uma avaliação que acompanha o processo e ajuda o aluno a aprender, em vez de apenas classificá-lo.",
+    "feedbackCompleto": "Uma avaliação inclusiva deve ser formativa, ou seja, deve acompanhar todo o processo de aprendizagem para diagnosticar dificuldades e orientar a prática pedagógica. Ela deve ser contínua, diversificada em seus instrumentos (provas, trabalhos, observações) e flexível, permitindo adaptações para atender às necessidades de todos os estudantes.",
+    "subjects": ["especificos"]
+  },
+  {
+    "question": "Qual o papel do Especialista em Educação Básica (EEB) na articulação entre a escola e a comunidade?",
+    "options": [
+      "Isolar a escola da comunidade para evitar interferências externas.",
+      "Atuar como um mediador, promovendo a participação da família e da comunidade na vida escolar e fortalecendo os laços que contribuem para o processo educativo.",
+      "Apenas convocar os pais para reuniões quando há problemas disciplinares.",
+      "Gerenciar os recursos financeiros provenientes de doações da comunidade."
+    ],
+    "answer": 1,
+    "hint": "Pense no EEB como a 'ponte' que conecta a escola com o mundo ao seu redor.",
+    "feedbackCompleto": "O EEB tem um papel crucial na articulação entre a escola, as famílias e a comunidade. Ele deve promover canais de diálogo e participação, como o Colegiado Escolar e as reuniões de pais, para que a comunidade se sinta parte do projeto educativo. Essa parceria é fundamental para o sucesso da aprendizagem dos alunos.",
+    "subjects": ["especificos"]
+  },
+  {
+    "question": "A Base Nacional Comum Curricular (BNCC) está estruturada em:",
+    "options": [
+      "Conteúdos programáticos detalhados que devem ser seguidos rigidamente.",
+      "Competências e habilidades que devem ser desenvolvidas pelos alunos ao longo da educação básica.",
+      "Diretrizes para a gestão financeira das escolas.",
+      "Um ranking das melhores escolas do país."
+    ],
+    "answer": 1,
+    "hint": "Pense na BNCC como um guia do 'que' os alunos devem aprender a 'fazer' com o conhecimento.",
+    "feedbackCompleto": "A BNCC não é uma lista de conteúdos, mas sim um documento que define as competências (mobilização de conhecimentos, habilidades, atitudes e valores) e as habilidades (aprendizagens essenciais) que se espera que todos os alunos desenvolvam. Ela orienta a criação de currículos focados no desenvolvimento integral do estudante.",
+    "subjects": ["especificos", "legislacao"]
+  },
+  {
+    "question": "A gestão democrática do ensino público, um princípio constitucional, é efetivada na escola principalmente através da:",
+    "options": [
+      "Tomada de decisão centralizada na figura do diretor.",
+      "Existência e atuação de órgãos colegiados, como o Colegiado Escolar e o Conselho de Classe, e da construção participativa do Projeto Político Pedagógico.",
+      "Realização de eleições anuais para todos os cargos da escola.",
+      "Subordinação da escola às determinações da Secretaria de Educação, sem autonomia."
+    ],
+    "answer": 1,
+    "hint": "Pense nos mecanismos que garantem a 'participação' de todos nas decisões da escola.",
+    "feedbackCompleto": "A gestão democrática se materializa na participação da comunidade escolar nas decisões. Seus principais instrumentos são a construção coletiva do PPP, a autonomia da escola e a atuação de órgãos colegiados como o Colegiado Escolar (composto por representantes de todos os segmentos da comunidade) e o Conselho de Classe, que são espaços de decisão compartilhada.",
+    "subjects": ["especificos"]
+  },
+  {
+    "question": "O que a LDB define sobre a avaliação do ensino fundamental?",
+    "options": [
+      "Deve ser exclusivamente quantitativa, baseada em notas.",
+      "Deve ser contínua e cumulativa, com a prevalência dos aspectos qualitativos sobre os quantitativos e dos resultados ao longo do período sobre os de eventuais provas finais.",
+      "A reprovação é proibida em qualquer ano do ensino fundamental.",
+      "A avaliação é opcional para as escolas."
+    ],
+    "answer": 1,
+    "hint": "Pense em uma avaliação que valoriza mais o 'processo' de aprendizagem do que uma única prova final.",
+    "feedbackCompleto": "Conforme o Art. 24, V, 'a', da LDB, a verificação do rendimento escolar no ensino fundamental e médio observará o critério de 'avaliação contínua e cumulativa do desempenho do aluno, com prevalência dos aspectos qualitativos sobre os quantitativos e dos resultados ao longo do período sobre os de eventuais provas finais'.",
+    "subjects": ["especificos", "legislacao"]
+  },
+  {
+    "question": "Qual a principal função do currículo na perspectiva da inclusão e da diversidade?",
+    "options": [
+      "Ser um instrumento de padronização e homogeneização dos alunos.",
+      "Valorizar e incorporar a diversidade cultural, social e individual dos estudantes, adaptando-se para garantir que todos tenham o direito à aprendizagem.",
+      "Focar apenas nos conteúdos considerados essenciais para o mercado de trabalho.",
+      "Ser elaborado exclusivamente por especialistas, sem a participação dos professores."
+    ],
+    "answer": 1,
+    "hint": "Pense em um currículo que 'acolhe' e 'valoriza' as diferenças, em vez de ignorá-las.",
+    "feedbackCompleto": "Um currículo inclusivo deve reconhecer, valorizar e trabalhar com a diversidade presente na sala de aula. Isso implica em ir além de um currículo único e padronizado, buscando estratégias, metodologias e conteúdos que dialoguem com as diferentes realidades e necessidades dos alunos, garantindo que todos possam aprender e se desenvolver plenamente.",
+    "subjects": ["especificos"]
+  },
+  {
+    "question": "A Política de Educação Integral busca garantir:",
+    "options": [
+      "Apenas que o aluno passe mais tempo dentro da escola.",
+      "A formação humana e o desenvolvimento integral do estudante em suas dimensões intelectual, física, emocional, social e cultural.",
+      "Apenas o reforço escolar em Língua Portuguesa e Matemática.",
+      "A profissionalização precoce de todos os alunos do ensino fundamental."
+    ],
+    "answer": 1,
+    "hint": "Pense na educação integral como uma formação 'completa' do ser humano, não apenas no tempo.",
+    "feedbackCompleto": "A Educação Integral não se resume à ampliação da jornada escolar (escola em tempo integral). Seu conceito central é a busca pelo desenvolvimento integral do estudante, considerando todas as suas dimensões (cognitiva, social, emocional, cultural e física) e articulando os diferentes saberes e espaços de aprendizagem.",
+    "subjects": ["especificos"]
+  },
+  {
+    "question": "Qual o papel do Especialista em Educação Básica (EEB) frente à indisciplina na escola?",
+    "options": [
+      "Aplicar punições severas e imediatas aos alunos.",
+      "Ignorar os problemas disciplinares, focando apenas no pedagógico.",
+      "Atuar de forma mediadora, buscando compreender as causas do comportamento indisciplinar e construindo, junto com professores, alunos e famílias, estratégias para a resolução de conflitos e a promoção de um ambiente de respeito.",
+      "Encaminhar todos os casos diretamente para o Conselho Tutelar."
+    ],
+    "answer": 2,
+    "hint": "Pense no EEB como um mediador que busca a raiz do problema, em vez de apenas punir a consequência.",
+    "feedbackCompleto": "Frente à indisciplina, o papel do EEB deve ser pedagógico e mediador. Em vez de uma abordagem puramente punitiva, ele deve buscar entender as causas dos conflitos e comportamentos, dialogar com os envolvidos (alunos, professores, famílias) e articular estratégias coletivas que promovam a construção de regras de convivência e um clima escolar mais respeitoso e positivo.",
+    "subjects": ["especificos"]
+  },
+  {
+    "question": "O que a BNCC define como 'competência'?",
+    "options": [
+      "Apenas o acúmulo de informações e conhecimentos.",
+      "A mobilização de conhecimentos, habilidades, atitudes e valores para resolver demandas complexas da vida cotidiana, do pleno exercício da cidadania e do mundo do trabalho.",
+      "A capacidade de realizar uma tarefa de forma rápida.",
+      "Apenas as habilidades socioemocionais do estudante."
+    ],
+    "answer": 1,
+    "hint": "Pense na competência como a capacidade de 'usar' o que se sabe para resolver problemas reais.",
+    "feedbackCompleto": "A definição de competência na BNCC é a 'mobilização de conhecimentos (conceitos e procedimentos), habilidades (práticas, cognitivas e socioemocionais), atitudes e valores para resolver demandas complexas da vida cotidiana, do pleno exercício da cidadania e do mundo do trabalho'. É saber, saber fazer e saber ser/conviver.",
+    "subjects": ["especificos", "legislacao"]
+  },
+  {
+    "question": "Dentro da Gestão Democrática, qual a principal função do Colegiado Escolar?",
+    "options": [
+      "Executar as tarefas administrativas diárias da secretaria.",
+      "Atuar como um órgão de representação da comunidade escolar, com funções consultivas e deliberativas sobre as dimensões pedagógica, administrativa e financeira da escola.",
+      "Aprovar ou reprovar os alunos no final do ano letivo.",
+      "Fiscalizar o trabalho individual de cada professor em sala de aula."
+    ],
+    "answer": 1,
+    "hint": "Pense no Colegiado como o 'parlamento' da escola, onde as decisões são discutidas e tomadas em conjunto.",
+    "feedbackCompleto": "O Colegiado Escolar é o principal instrumento da gestão democrática. Ele é um órgão de representação da comunidade (pais, alunos, professores, servidores) que tem funções consultivas e deliberativas sobre as questões centrais da vida da escola, como o Projeto Político Pedagógico e a aplicação dos recursos financeiros.",
+    "subjects": ["especificos"]
+  },
+  {
+    "question": "O que a 'avaliação formativa' busca, em oposição à avaliação somativa?",
+    "options": [
+      "Apenas classificar os alunos em rankings de desempenho ao final do bimestre.",
+      "Diagnosticar as dificuldades de aprendizagem durante o processo, fornecendo feedback para que o professor e o aluno possam ajustar suas ações.",
+      "Aplicar uma prova única e padronizada para todas as escolas do estado.",
+      "Medir exclusivamente a capacidade de memorização de conteúdos pelos alunos."
+    ],
+    "answer": 1,
+    "hint": "Pense na avaliação como uma ferramenta para 'formar' o aluno, e não apenas para 'medir' o que ele aprendeu no final.",
+    "feedbackCompleto": "A avaliação formativa é um processo contínuo que acontece durante o ensino. Seu principal objetivo não é atribuir uma nota (característica da avaliação somativa), mas sim coletar informações sobre o progresso dos alunos, identificar dificuldades e fornecer feedback tanto para o estudante quanto para o professor, permitindo o ajuste das estratégias pedagógicas para garantir a aprendizagem.",
+    "subjects": ["especificos"]
+  },
+  {
+    "question": "Qual a relação entre o Projeto Político Pedagógico (PPP) e a Base Nacional Comum Curricular (BNCC)?",
+    "options": [
+      "O PPP substitui a BNCC na elaboração do currículo da escola.",
+      "A BNCC é um documento opcional, e o PPP é obrigatório.",
+      "O PPP deve ser elaborado com base nas diretrizes da BNCC, traduzindo as competências e habilidades nacionais para a realidade e o contexto daquela comunidade escolar.",
+      "O PPP foca na gestão administrativa, enquanto a BNCC foca apenas nos conteúdos."
+    ],
+    "answer": 2,
+    "hint": "Pense na BNCC como a 'base nacional' e no PPP como a 'identidade local' da escola.",
+    "feedbackCompleto": "A BNCC é um documento normativo nacional que define as aprendizagens essenciais. O PPP é o documento de identidade da escola. A relação é que o PPP deve obrigatoriamente se alinhar à BNCC, mas também deve contextualizá-la, ou seja, traduzir as competências e habilidades nacionais para a realidade, as necessidades e as características específicas de sua comunidade escolar.",
+    "subjects": ["especificos", "legislacao"]
+  },
+  {
+    "question": "A Política de Educação Integral, conforme as diretrizes atuais, visa principalmente:",
+    "options": [
+      "Manter o aluno na escola por mais horas, com as mesmas atividades do turno regular.",
+      "Promover o desenvolvimento do estudante em todas as suas dimensões (intelectual, física, emocional, social e cultural), articulando diferentes saberes e espaços de aprendizagem.",
+      "Oferecer apenas reforço escolar nas matérias com baixo desempenho.",
+      "Garantir que todos os alunos se formem em um curso técnico."
+    ],
+    "answer": 1,
+    "hint": "Pense na educação integral como uma formação 'completa' do ser humano, e não apenas na ampliação do tempo.",
+    "feedbackCompleto": "Educação Integral não se resume a escola em tempo integral. Seu conceito central é a busca pelo desenvolvimento pleno do ser humano em todas as suas dimensões. Isso implica em um currículo que articula diferentes saberes e experiências, valorizando as artes, os esportes, a cultura, a ciência e o desenvolvimento socioemocional, dentro ou fora do tempo regular.",
+    "subjects": ["especificos"]
+  },
+  {
+    "question": "Qual o papel do Especialista em Educação Básica (EEB) no Conselho de Classe?",
+    "options": [
+      "Apenas secretariar a reunião e redigir a ata.",
+      "Presidir o conselho e tomar todas as decisões finais sobre a aprovação dos alunos.",
+      "Atuar como mediador e articulador pedagógico, auxiliando os professores na análise do processo de ensino-aprendizagem e na definição de estratégias coletivas de intervenção.",
+      "Representar os interesses dos pais e responsáveis durante a reunião."
+    ],
+    "answer": 2,
+    "hint": "Pense no EEB como um líder pedagógico que facilita a discussão e o planejamento.",
+    "feedbackCompleto": "No Conselho de Classe, o EEB tem um papel estratégico de liderança pedagógica. Ele deve mediar as discussões, garantir que o foco seja na análise do processo de aprendizagem (e não apenas nas notas), ajudar a equipe a compreender as causas das dificuldades e articular, coletivamente, a elaboração de estratégias de intervenção para os alunos e turmas que precisam de apoio.",
+    "subjects": ["especificos"]
+  },
+  {
+    "question": "Na perspectiva da Educação Inclusiva, o Atendimento Educacional Especializado (AEE) deve:",
+    "options": [
+      "Substituir as aulas na classe comum para os alunos com deficiência.",
+      "Ocorrer na mesma sala e no mesmo horário da aula regular.",
+      "Ser oferecido no contraturno escolar, em Salas de Recursos Multifuncionais, para complementar ou suplementar a formação do aluno.",
+      "Ser realizado exclusivamente por instituições filantrópicas fora da escola."
+    ],
+    "answer": 2,
+    "hint": "Pense no AEE como um 'apoio' à escolarização na classe comum, e não como uma substituição.",
+    "feedbackCompleto": "A Política Nacional de Educação Especial na Perspectiva da Educação Inclusiva estabelece que o AEE não substitui a escolarização na classe comum. Ele deve ser ofertado de forma complementar (para alunos com deficiência) ou suplementar (para alunos com altas habilidades) no turno inverso ao da escolarização, preferencialmente em Salas de Recursos Multifuncionais na própria escola.",
+    "subjects": ["especificos"]
+  },
+  {
+    "question": "Qual a principal diferença entre 'integração' e 'inclusão' no contexto da educação especial?",
+    "options": [
+      "Não há diferença, são termos sinônimos.",
+      "Integração significa colocar o aluno na classe comum, esperando que ele se adapte ao sistema; Inclusão significa transformar o sistema para acolher e atender às necessidades de todos.",
+      "Integração é para deficiências leves; Inclusão para deficiências severas.",
+      "Integração ocorre na rede privada; Inclusão na rede pública."
+    ],
+    "answer": 1,
+    "hint": "Pense em quem precisa se adaptar: o aluno se adapta à escola (integração) ou a escola se adapta ao aluno (inclusão)?",
+    "feedbackCompleto": "A diferença é conceitual e muito importante. Na 'integração', o aluno com deficiência é inserido na escola comum, mas é ele quem precisa se adaptar à estrutura e ao currículo existentes. Na 'inclusão', o sistema escolar como um todo (espaço físico, currículo, práticas pedagógicas) é que se transforma e se adapta para acolher e garantir a aprendizagem de todos os alunos, com suas diferenças e singularidades.",
+    "subjects": ["especificos"]
+  },
+  {
+    "question": "O que são as 'competências socioemocionais' e qual sua importância no currículo?",
+    "options": [
+      "Habilidades relacionadas apenas ao desempenho em esportes.",
+      "Capacidades de reconhecer e gerir emoções, construir bons relacionamentos e tomar decisões responsáveis, sendo essenciais para o desenvolvimento integral.",
+      "Conteúdos extras que só devem ser trabalhados se sobrar tempo.",
+      "Habilidades que substituem o ensino de Língua Portuguesa e Matemática."
+    ],
+    "answer": 1,
+    "hint": "Pense nas habilidades necessárias para 'ser' e 'conviver' no século XXI.",
+    "feedbackCompleto": "As competências socioemocionais (como empatia, autogestão, colaboração, resiliência) são um conjunto de habilidades que desenvolvemos para lidar com nossas emoções, nos relacionar com os outros e alcançar objetivos. A BNCC as integra como parte essencial do desenvolvimento integral do aluno, reconhecendo que são tão importantes quanto as competências cognitivas.",
+    "subjects": ["especificos"]
+  },
+  {
+    "question": "Qual o papel do Especialista em Educação Básica (EEB) no planejamento docente?",
+    "options": [
+      "Elaborar todos os planos de aula para os professores.",
+      "Apenas fiscalizar se os professores entregaram os planejamentos no prazo.",
+      "Orientar e assessorar os professores na elaboração de seus planos de trabalho e de aula, garantindo o alinhamento com o PPP e o Currículo Referência.",
+      "Não tem participação, pois o planejamento é uma atividade individual do professor."
+    ],
+    "answer": 2,
+    "hint": "Pense no EEB como um apoio técnico-pedagógico que qualifica o trabalho do professor.",
+    "feedbackCompleto": "O EEB atua como um supervisor e orientador. Seu papel não é fazer o plano pelo professor, mas sim assessorá-lo, oferecendo suporte teórico e metodológico para que o planejamento seja coerente, bem fundamentado e alinhado aos documentos curriculares (PPP, CRMG, BNCC). Ele ajuda a qualificar a prática docente desde a sua concepção.",
+    "subjects": ["especificos"]
+  },
+  {
+    "question": "A 'gestão da sala de aula' é um componente crucial do trabalho pedagógico. Ela envolve:",
+    "options": [
+      "Apenas o controle da disciplina e a aplicação de punições.",
+      "A organização do ambiente, do tempo, dos recursos e das interações pedagógicas para criar um clima propício à aprendizagem.",
+      "A elaboração do Projeto Político Pedagógico da escola.",
+      "A comunicação exclusiva com os pais dos alunos com dificuldades."
+    ],
+    "answer": 1,
+    "hint": "Pense na gestão da sala de aula como a 'orquestração' de todos os elementos que favorecem o ensino.",
+    "feedbackCompleto": "A gestão da sala de aula é um conceito amplo que vai além do controle disciplinar. Envolve a organização do espaço físico, a gestão do tempo pedagógico, a escolha e o uso de diferentes recursos didáticos e, principalmente, a mediação das interações entre os alunos e entre alunos e professor, de modo a criar um ambiente seguro, participativo e focado na aprendizagem.",
+    "subjects": ["especificos"]
+  },
+  {
+    "question": "A Lei de Diretrizes e Bases da Educação Nacional (LDB - Lei nº 9.394/1996) estabelece que a educação básica é formada por:",
+    "options": [
+      "Educação infantil, ensino fundamental e ensino superior.",
+      "Ensino fundamental, ensino médio e educação profissional.",
+      "Educação infantil, ensino fundamental e ensino médio.",
+      "Apenas ensino fundamental e médio."
+    ],
+    "answer": 2,
+    "hint": "Pense nos três níveis que compõem a formação básica obrigatória e a primeira etapa da educação.",
+    "feedbackCompleto": "Conforme o Art. 21 da Lei de Diretrizes e Bases da Educação Nacional (LDB), a educação básica é composta pela educação infantil, pelo ensino fundamental e pelo ensino médio. O ensino superior é um nível distinto.",
+    "subjects": ["legislacao"]
+  },
+  {
+    "question": "O que a Constituição Federal estabelece, em seu Art. 208, sobre a educação básica obrigatória e gratuita?",
+    "options": [
+      "Dos 6 aos 14 anos de idade.",
+      "Dos 4 aos 17 anos de idade.",
+      "Dos 0 aos 17 anos de idade.",
+      "Apenas o ensino fundamental."
+    ],
+    "answer": 1,
+    "hint": "Lembre-se da Emenda Constitucional nº 59/2009, que ampliou a obrigatoriedade da educação básica.",
+    "feedbackCompleto": "A Constituição Federal, com a redação dada pela EC nº 59/2009, estabelece a obrigatoriedade e gratuidade da educação básica dos 4 (quatro) aos 17 (dezessete) anos de idade, assegurada inclusive sua oferta gratuita para todos os que a ela não tiveram acesso na idade própria. Isso abrange a pré-escola, o ensino fundamental e o ensino médio.",
+    "subjects": ["legislacao", "direitos-humanos"]
+  },
+  {
+    "question": "Qual a principal finalidade da Base Nacional Comum Curricular (BNCC)?",
+    "options": [
+      "Definir um currículo único e engessado para todas as escolas do país.",
+      "Estabelecer o conjunto de aprendizagens essenciais que todos os alunos devem desenvolver ao longo da Educação Básica, servindo como referência para a elaboração dos currículos.",
+      "Substituir o papel do professor na elaboração do planejamento de aula.",
+      "Avaliar o desempenho financeiro das escolas."
+    ],
+    "answer": 1,
+    "hint": "Pense na BNCC como uma 'referência' nacional, e não como um 'currículo' pronto.",
+    "feedbackCompleto": "A BNCC é um documento normativo que define as aprendizagens essenciais que todos os estudantes brasileiros têm o direito de adquirir. Ela não é um currículo, mas uma referência obrigatória para a elaboração e adequação dos currículos das redes de ensino e das propostas pedagógicas das escolas, respeitando a diversidade regional.",
+    "subjects": ["legislacao", "especificos"]
+  },
+  {
+    "question": "O Plano Nacional de Educação (PNE) é uma lei que estabelece diretrizes, metas e estratégias. Sua vigência é de:",
+    "options": [
+      "4 anos.",
+      "5 anos.",
+      "10 anos.",
+      "Prazo indeterminado."
+    ],
+    "answer": 2,
+    "hint": "Pense no PNE como um plano de longo prazo para a educação brasileira.",
+    "feedbackCompleto": "O Plano Nacional de Educação (PNE), instituído pela Lei nº 13.005/2014, tem vigência decenal, ou seja, de 10 anos. Ele estabelece 20 metas para a educação nacional a serem cumpridas nesse período, orientando as políticas educacionais de todos os entes federativos.",
+    "subjects": ["legislacao"]
+  },
+  {
+    "question": "A Lei nº 869/1952 (Estatuto dos Funcionários Públicos Civis de MG) prevê, como uma das penalidades disciplinares:",
+    "options": [
+      "Apenas advertência verbal.",
+      "Rebaixamento de cargo.",
+      "Multa, suspensão e demissão.",
+      "Transferência compulsória para outra cidade."
+    ],
+    "answer": 2,
+    "hint": "O estatuto prevê uma gradação de sanções, desde as mais leves até a mais grave, que é a demissão.",
+    "feedbackCompleto": "O Art. 244 da Lei nº 869/1952 elenca as penas disciplinares aplicáveis aos servidores, que incluem: repreensão, multa, suspensão, destituição de função, demissão e demissão a bem do serviço público. A penalidade é aplicada de acordo com a gravidade da infração.",
+    "subjects": ["legislacao"]
+  },
+  {
+    "question": "De acordo com a LDB (Art. 12), uma das incumbências dos estabelecimentos de ensino é:",
+    "options": [
+      "Legislar sobre diretrizes e bases da educação nacional.",
+      "Elaborar e executar sua proposta pedagógica.",
+      "Autorizar, reconhecer e credenciar cursos das instituições de educação superior.",
+      "Assegurar o processo nacional de avaliação do rendimento escolar."
+    ],
+    "answer": 1,
+    "hint": "Pense nas responsabilidades que são da 'escola' em si, e não dos sistemas de ensino ou dos docentes.",
+    "feedbackCompleto": "Conforme o Art. 12, inciso I, da LDB, os estabelecimentos de ensino, respeitadas as normas comuns e as do seu sistema de ensino, terão a incumbência de 'elaborar e executar sua proposta pedagógica', o que reforça a autonomia da escola na construção de seu Projeto Político Pedagógico (PPP).",
+    "subjects": ["legislacao"]
+  },
+  {
+    "question": "O Art. 205 da Constituição Federal afirma que a educação, direito de todos e dever do Estado e da família, será promovida e incentivada com a colaboração da sociedade, visando a qual finalidade?",
+    "options": [
+      "Apenas a qualificação para o mercado de trabalho.",
+      "Apenas o desenvolvimento intelectual do indivíduo.",
+      "O pleno desenvolvimento da pessoa, seu preparo para o exercício da cidadania e sua qualificação para o trabalho.",
+      "A padronização do pensamento e da cultura."
+    ],
+    "answer": 2,
+    "hint": "Pense nos três pilares que definem o objetivo da educação na Constituição Cidadã.",
+    "feedbackCompleto": "O Art. 205 da CF/88 estabelece a finalidade tríplice da educação: 1) o pleno desenvolvimento da pessoa; 2) seu preparo para o exercício da cidadania; e 3) sua qualificação para o trabalho. Essa visão integral orienta toda a legislação educacional subsequente.",
+    "subjects": ["legislacao", "direitos-humanos"]
+  },
+  {
+    "question": "Qual é a carga horária mínima anual que deve ser cumprida na educação básica (ensinos fundamental e médio), distribuída por um mínimo de 200 dias de efetivo trabalho escolar?",
+    "options": [
+      "600 horas",
+      "720 horas",
+      "800 horas",
+      "1000 horas"
+    ],
+    "answer": 2,
+    "hint": "Este é um dos parâmetros básicos de organização do ano letivo, definido na LDB.",
+    "feedbackCompleto": "De acordo com o Art. 24, inciso I, da LDB, a carga horária mínima anual na educação básica será de oitocentas horas, distribuídas por um mínimo de duzentos dias de efetivo trabalho escolar, excluído o tempo reservado aos exames finais, quando houver.",
+    "subjects": ["legislacao"]
+  },
+  {
+    "question": "A Lei nº 15.293/2004 institui as carreiras dos Profissionais da Educação do Estado de MG, estrutura a carreira de Especialista em Educação Básica (EEB) com base em:",
+    "options": [
+      "Apenas o tempo de serviço.",
+      "Níveis de escolaridade e graus de posicionamento por mérito e tempo.",
+      "Apenas a indicação política.",
+      "Um sistema de avaliação sem progressão."
+    ],
+    "answer": 1,
+    "hint": "Pense na estrutura que permite a evolução na carreira tanto por formação quanto por desempenho.",
+    "feedbackCompleto": "A Lei nº 15.293/2004 estrutura as carreiras em níveis (relacionados à escolaridade/formação) e graus (relacionados à progressão por tempo e avaliação de desempenho). Isso permite que o servidor avance na carreira tanto por meio da qualificação profissional quanto pelo mérito e tempo de serviço.",
+    "subjects": ["legislacao"]
+  },
+  {
+    "question": "Conforme a Constituição do Estado de Minas Gerais, o que deve ser assegurado na organização do sistema estadual de ensino?",
+    "options": [
+      "A centralização de todas as decisões na capital.",
+      "A gestão exclusivamente privada das escolas públicas.",
+      "A participação da comunidade, através de órgãos colegiados, na gestão das escolas.",
+      "A prioridade de investimento no ensino superior em detrimento do básico."
+    ],
+    "answer": 2,
+    "hint": "Pense no princípio da gestão democrática aplicado à realidade de Minas Gerais.",
+    "feedbackCompleto": "O Art. 197 da Constituição do Estado de Minas Gerais é explícito ao determinar que a gestão do ensino público será democrática, assegurando a participação de representantes da comunidade escolar e local na definição e avaliação das políticas e na gestão de cada escola, por meio de órgãos colegiados.",
+    "subjects": ["legislacao", "especificos"]
+  },
+  {
+    "question": "De acordo com a LDB (Lei nº 9.394/96), a verificação do rendimento escolar no ensino fundamental e médio observará, entre outros, o critério de:",
+    "options": [
+      "Avaliação exclusivamente somativa ao final do período letivo.",
+      "Prevalência dos aspectos quantitativos sobre os qualitativos.",
+      "Avaliação contínua e cumulativa do desempenho do aluno, com prevalência dos aspectos qualitativos sobre os quantitativos.",
+      "Realização obrigatória de exames nacionais para aprovação em cada série."
+    ],
+    "answer": 2,
+    "hint": "Pense em uma avaliação que valoriza o processo de aprendizagem ao longo do ano, e não apenas uma única prova final.",
+    "feedbackCompleto": "A resposta correta está no Art. 24, inciso V, alínea 'a', da LDB. A lei estabelece que a avaliação deve ser 'contínua e cumulativa do desempenho do aluno, com prevalência dos aspectos qualitativos sobre os quantitativos e dos resultados ao longo do período sobre os de eventuais provas finais'. Isso valoriza a avaliação formativa.",
+    "subjects": ["especificos", "legislacao"]
+  },
+  {
+    "question": "A Constituição Federal de 1988 estabelece, em seu Art. 206, os princípios com base nos quais o ensino será ministrado. Qual das seguintes opções NÃO é um desses princípios?",
+    "options": [
+      "Liberdade de aprender, ensinar, pesquisar e divulgar o pensamento, a arte e o saber.",
+      "Pluralismo de ideias e de concepções pedagógicas.",
+      "Gestão democrática do ensino público, na forma da lei.",
+      "Ensino exclusivamente técnico-profissionalizante."
+    ],
+    "answer": 3,
+    "hint": "Analise os incisos do Art. 206 da CF/88. Um dos itens da lista limita a finalidade da educação de forma incorreta.",
+    "feedbackCompleto": "O ensino exclusivamente técnico-profissionalizante não é um princípio listado no Art. 206 da CF/88. Pelo contrário, a LDB e a própria Constituição prezam por uma formação integral. As outras opções são princípios expressos nos incisos II, III e VI do referido artigo.",
+    "subjects": ["especificos", "legislacao"]
+  },
+  {
+    "question": "O Plano Nacional de Educação (PNE - Lei nº 13.005/2014) estabelece metas para a educação brasileira. Uma de suas diretrizes é:",
+    "options": [
+      "A privatização de todas as universidades públicas.",
+      "A superação das desigualdades educacionais, com ênfase na promoção da cidadania e na erradicação de todas as formas de discriminação.",
+      "A redução do investimento público em educação para 4% do PIB.",
+      "O fim da gestão democrática nas escolas públicas."
+    ],
+    "answer": 1,
+    "hint": "Pense no PNE como um plano que busca a equidade e a justiça social através da educação.",
+    "feedbackCompleto": "A superação das desigualdades educacionais é uma das diretrizes centrais do PNE, conforme estabelece o Art. 2º, inciso III. O plano visa garantir a universalização do acesso e a melhoria da qualidade da educação, combatendo as disparidades regionais, sociais e étnico-raciais.",
+    "subjects": ["especificos", "legislacao"]
+  },
+  {
+    "question": "Segundo a Lei nº 869/1952 (Estatuto dos Funcionários Públicos Civis de MG), o que é 'remoção'?",
+    "options": [
+      "A punição de um servidor com a mudança de local de trabalho.",
+      "A passagem do servidor para cargo de atribuições e vencimentos compatíveis.",
+      "O deslocamento do funcionário de uma para outra repartição ou serviço, a pedido ou de ofício.",
+      "O reingresso do servidor demitido ao serviço público."
+    ],
+    "answer": 2,
+    "hint": "Pense no ato de 'mover' o servidor para outro local, sem alterar seu cargo.",
+    "feedbackCompleto": "Conforme o Art. 99 da Lei nº 869/1952, a remoção é o ato pelo qual o funcionário é deslocado de uma repartição para outra, ou de uma para outra localidade. Pode ocorrer a pedido do servidor ou de ofício (por interesse da Administração), mas não tem caráter punitivo.",
+    "subjects": ["especificos", "legislacao"]
+  },
+  {
+    "question": "A Resolução SEE nº 4.948/2024, que organiza o ensino em MG, trata do 'reforço escolar'. Qual o objetivo dessa ação?",
+    "options": [
+      "Acelerar a aprovação de todos os alunos, independentemente da aprendizagem.",
+      "Oferecer atividades de aprofundamento apenas para os alunos com notas altas.",
+      "Desenvolver estratégias pedagógicas para os estudantes que apresentam baixo rendimento ou dificuldades de aprendizagem, visando garantir seu progresso.",
+      "Substituir as aulas regulares por atividades lúdicas."
+    ],
+    "answer": 2,
+    "hint": "Pense no reforço como uma intervenção pedagógica para ajudar quem está com dificuldades.",
+    "feedbackCompleto": "O reforço escolar, ou intervenção pedagógica, é uma estratégia prevista nas normativas da SEE/MG para garantir o direito à aprendizagem. Seu objetivo é oferecer suporte pedagógico, com metodologias diferenciadas, aos estudantes que demonstram dificuldades, para que possam superar seus desafios e acompanhar o desenvolvimento da turma.",
+    "subjects": ["especificos", "legislacao"]
+  },
+  {
+    "question": "De acordo com a LDB (Art. 13), os docentes incumbir-se-ão, entre outras coisas, de:",
+    "options": [
+      "Elaborar o calendário escolar e a proposta pedagógica da escola.",
+      "Participar da elaboração da proposta pedagógica, elaborar e cumprir plano de trabalho e zelar pela aprendizagem dos alunos.",
+      "Administrar os recursos financeiros da unidade escolar.",
+      "Assegurar o cumprimento dos dias letivos e horas-aula estabelecidas."
+    ],
+    "answer": 1,
+    "hint": "Pense nas responsabilidades diretas do professor em relação ao seu planejamento e aos seus alunos.",
+    "feedbackCompleto": "O Art. 13 da LDB lista as incumbências dos docentes. A opção B resume algumas das principais: I - participar da elaboração da proposta pedagógica da escola; II - elaborar e cumprir plano de trabalho, segundo a proposta pedagógica do estabelecimento de ensino; III - zelar pela aprendizagem dos alunos. As outras opções são, em geral, incumbências do estabelecimento de ensino (Art. 12).",
+    "subjects": ["especificos", "legislacao"]
+  },
+  {
+    "question": "O que a Constituição do Estado de Minas Gerais estabelece sobre a gestão democrática do ensino público?",
+    "options": [
+      "Que a escolha dos diretores de escola deve ser por indicação política.",
+      "Que a gestão democrática é facultativa para as escolas estaduais.",
+      "Que a gestão democrática será exercida com a participação de representantes da comunidade escolar e local em órgãos colegiados, como o Colegiado Escolar.",
+      "Que as decisões pedagógicas são de responsabilidade exclusiva da Secretaria de Educação."
+    ],
+    "answer": 2,
+    "hint": "Pense nos mecanismos que garantem a participação da comunidade nas decisões da escola.",
+    "feedbackCompleto": "O Art. 197 da Constituição do Estado de Minas Gerais determina que a gestão do ensino público será democrática, assegurando a participação de representantes da comunidade escolar e local na definição e avaliação das políticas e na gestão de cada escola, por meio de órgãos colegiados.",
+    "subjects": ["especificos", "legislacao"]
+  },
+  {
+    "question": "A Lei nº 15.293/2004 institui as carreiras dos Profissionais de Educação do Estado de MG. O cargo de Especialista em Educação Básica (EEB) tem como uma de suas atribuições:",
+    "options": [
+      "Apenas a regência de aulas.",
+      "Exercer a supervisão do processo didático, atuando como elemento articulador no planejamento e acompanhamento das atividades pedagógicas.",
+      "Realizar a inspeção e fiscalização das escolas.",
+      "Administrar os recursos humanos da Superintendência Regional de Ensino."
+    ],
+    "answer": 1,
+    "hint": "Pense no papel do EEB como um supervisor pedagógico.",
+    "feedbackCompleto": "Conforme o Anexo II da Lei nº 15.293/2004, uma das atribuições centrais do EEB é 'exercer em unidade escolar a supervisão do processo didático como elemento articulador no planejamento, no acompanhamento, no controle e na avaliação das atividades pedagógicas'.",
+    "subjects": ["especificos", "legislacao"]
+  },
+  {
+    "question": "O que o Art. 37 da Constituição Federal, aplicado à educação, garante?",
+    "options": [
+      "A liberdade de cátedra para os professores.",
+      "Que o ingresso em cargo ou emprego público na educação depende de aprovação em concurso público, e a gestão deve obedecer aos princípios da legalidade, impessoalidade, moralidade, publicidade e eficiência (LIMPE).",
+      "O financiamento da educação básica.",
+      "A criação de universidades federais."
+    ],
+    "answer": 1,
+    "hint": "Pense nos princípios gerais que regem toda a Administração Pública, incluindo a área da educação.",
+    "feedbackCompleto": "O Art. 37 da CF/88 estabelece as regras gerais para toda a Administração Pública. Aplicado à educação, ele garante que a contratação de profissionais para cargos efetivos seja feita por concurso público (inciso II) e que toda a gestão educacional pública (matrículas, alocação de recursos, etc.) siga os princípios do LIMPE.",
+    "subjects": ["especificos", "legislacao"]
+  },
+  {
+    "question": "O Estatuto do Pessoal do Magistério de MG (Lei nº 7.109/1977) prevê a possibilidade de o professor se afastar para aperfeiçoamento. Qual é uma das condições para isso?",
+    "options": [
+      "O afastamento é um direito absoluto, podendo ser exercido a qualquer momento.",
+      "O afastamento depende da autorização da autoridade competente e deve estar alinhado com o interesse da Administração.",
+      "Apenas para cursos de curta duração, com no máximo 30 dias.",
+      "O servidor deve arcar com todos os custos, incluindo sua substituição."
+    ],
+    "answer": 1,
+    "hint": "Pense que o afastamento para estudo é uma concessão, e não um direito irrestrito.",
+    "feedbackCompleto": "Embora a legislação possa ter sofrido alterações, a regra geral, conforme o Art. 198 da Lei nº 7.109/1977, é que o afastamento para estudo ou missão especial depende de autorização da autoridade competente e está condicionado à conveniência e ao interesse do serviço público.",
+    "subjects": ["especificos", "legislacao"]
+  },
+  {
+    "question": "Qual a principal função do Colegiado Escolar em uma gestão democrática?",
+    "options": [
+      "Substituir o diretor na tomada de todas as decisões administrativas.",
+      "Ser um órgão consultivo, deliberativo e de avaliação, com representação de todos os segmentos da comunidade escolar, para participar das decisões pedagógicas, administrativas e financeiras da escola.",
+      "Organizar as festas e eventos da escola.",
+      "Apenas aprovar o calendário letivo proposto pela direção."
+    ],
+    "answer": 1,
+    "hint": "Pense no Colegiado como o 'parlamento' da escola, onde as decisões são discutidas e tomadas em conjunto.",
+    "feedbackCompleto": "O Colegiado Escolar é o principal instrumento da gestão democrática. Ele é um órgão de representação da comunidade (pais, alunos, professores, servidores) que tem funções consultivas e deliberativas sobre as questões centrais da vida da escola, como o Projeto Político Pedagógico e a aplicação dos recursos financeiros.",
+    "subjects": ["especificos"]
+  },
+  {
+    "question": "O que o conceito de 'avaliação formativa' propõe?",
+    "options": [
+      "Uma avaliação final que classifica os alunos em aprovados e reprovados.",
+      "Uma avaliação que ocorre durante o processo de ensino-aprendizagem, com o objetivo de diagnosticar dificuldades e reorientar as práticas pedagógicas.",
+      "Uma avaliação padronizada aplicada por um órgão externo.",
+      "A autoavaliação do professor sobre sua própria prática."
+    ],
+    "answer": 1,
+    "hint": "Pense na avaliação como uma ferramenta para 'formar' o aluno, e não apenas para 'medir' o que ele aprendeu no final.",
+    "feedbackCompleto": "A avaliação formativa é um processo contínuo que acontece durante o ensino. Seu principal objetivo não é atribuir uma nota, mas sim coletar informações sobre o progresso dos alunos, identificar dificuldades e fornecer feedback tanto para o estudante quanto para o professor, permitindo o ajuste das estratégias pedagógicas para garantir a aprendizagem.",
+    "subjects": ["especificos"]
+  },
+  {
+    "question": "A Base Nacional Comum Curricular (BNCC) define 'habilidades' como:",
+    "options": [
+      "Os valores e atitudes que os alunos devem desenvolver.",
+      "Os conteúdos conceituais de cada disciplina.",
+      "As aprendizagens essenciais que os alunos devem desenvolver, relacionando diferentes objetos de conhecimento (conteúdos, conceitos e processos).",
+      "Os temas transversais que devem ser abordados em todas as áreas."
+    ],
+    "answer": 2,
+    "hint": "Pense nas habilidades como o 'saber fazer' relacionado a um determinado conhecimento.",
+    "feedbackCompleto": "Na BNCC, as habilidades expressam as aprendizagens essenciais que devem ser asseguradas aos alunos. Elas são descritas por verbos que indicam as ações ou processos cognitivos que os alunos devem ser capazes de realizar, sempre relacionadas a um objeto de conhecimento (conteúdo) e a um contexto. Ex: 'Analisar (habilidade) a formação de territórios (objeto de conhecimento)'.",
+    "subjects": ["especificos"]
+  },
+  {
+    "question": "Qual o papel do Especialista em Educação Básica na construção do Projeto Político Pedagógico (PPP)?",
+    "options": [
+      "Escrever o documento sozinho e apresentá-lo à comunidade.",
+      "Apenas aprovar o documento elaborado pelos professores.",
+      "Coordenar e articular o processo de construção coletiva do PPP, garantindo a participação da comunidade e a coerência pedagógica do documento.",
+      "Não tem participação, pois é uma tarefa exclusiva do diretor."
+    ],
+    "answer": 2,
+    "hint": "Pense no EEB como o principal articulador pedagógico da escola.",
+    "feedbackCompleto": "O Especialista em Educação Básica é uma figura central na construção do PPP. Ele deve atuar como o principal articulador do processo, mobilizando a comunidade escolar, organizando os debates, sistematizando as contribuições e garantindo que o documento final reflita a identidade da escola e esteja alinhado às diretrizes educacionais e às necessidades dos alunos.",
+    "subjects": ["especificos"]
+  },
+  {
+    "question": "A 'educação integral' na perspectiva da formação humana, defendida nas políticas atuais, significa:",
+    "options": [
+      "Apenas a ampliação do tempo de permanência do aluno na escola.",
+      "O desenvolvimento do estudante em todas as suas dimensões: intelectual, física, emocional, social e cultural.",
+      "Um currículo focado exclusivamente em preparar para o vestibular.",
+      "A separação total entre as atividades curriculares e as extracriculares."
+    ],
+    "answer": 1,
+    "hint": "Pense em uma formação 'completa' do ser humano, não apenas no aspecto cognitivo ou no tempo.",
+    "feedbackCompleto": "A educação integral vai além do conceito de escola em tempo integral. Ela se refere a uma concepção de educação que busca o desenvolvimento pleno do ser humano em todas as suas dimensões. Isso implica em um currículo que articula diferentes saberes e experiências, valorizando as artes, os esportes, a cultura e o desenvolvimento socioemocional.",
+    "subjects": ["especificos"]
+  },
+  {
+    "question": "Qual a importância do 'Conselho de Classe' para o trabalho do Especialista em Educação Básica?",
+    "options": [
+      "É um momento meramente burocrático para registrar notas.",
+      "É a principal instância para aplicar punições disciplinares aos alunos.",
+      "É um espaço privilegiado de avaliação coletiva do processo pedagógico, permitindo ao EEB, junto com os professores, diagnosticar dificuldades e planejar intervenções.",
+      "É uma reunião para discutir apenas questões administrativas da escola."
+    ],
+    "answer": 2,
+    "hint": "Pense no Conselho como uma ferramenta de diagnóstico e planejamento pedagógico.",
+    "feedbackCompleto": "Para o Especialista, o Conselho de Classe é um momento estratégico. É a oportunidade de, coletivamente com os professores, analisar o processo de ensino-aprendizagem, identificar os avanços e as dificuldades da turma e de cada aluno, e, a partir desse diagnóstico, planejar intervenções pedagógicas e estratégias para garantir a aprendizagem de todos.",
+    "subjects": ["especificos"]
+  },
+  {
+    "question": "A inclusão de estudantes com necessidades educacionais especiais na rede regular de ensino exige, por parte da escola, a elaboração de:",
+    "options": [
+      "Um currículo totalmente diferente para esses alunos, separado da turma.",
+      "Adaptações curriculares e um Plano de Desenvolvimento Individual (PDI) para atender às suas especificidades.",
+      "A transferência imediata do aluno para uma escola especial.",
+      "A isenção do aluno de todas as atividades avaliativas."
+    ],
+    "answer": 1,
+    "hint": "Pense em como o currículo comum pode ser adaptado para garantir a participação e a aprendizagem de todos.",
+    "feedbackCompleto": "A educação inclusiva prevê que o currículo seja flexível. Para estudantes com necessidades educacionais especiais, a escola deve realizar adaptações curriculares, que podem ser de grande ou pequeno porte, e elaborar um Plano de Desenvolvimento Individual (PDI) ou Plano de Atendimento Educacional Especializado (PAEE), que detalha os suportes e estratégias pedagógicas específicas para aquele aluno.",
+    "subjects": ["especificos"]
+  },
+  {
+    "question": "Qual a principal atribuição de um EEB na função de Supervisor Pedagógico?",
+    "options": [
+      "Apenas fiscalizar o cumprimento do horário pelos professores.",
+      "Atuar como elemento articulador do processo didático-pedagógico, acompanhando, orientando e avaliando as práticas dos professores para a melhoria da qualidade do ensino.",
+      "Realizar a matrícula e a transferência de alunos.",
+      "Gerenciar a merenda escolar."
+    ],
+    "answer": 1,
+    "hint": "O foco da supervisão é o 'pedagógico', ou seja, o processo de ensino-aprendizagem.",
+    "feedbackCompleto": "A função primordial do Supervisor Pedagógico é a articulação do trabalho pedagógico. Isso envolve acompanhar o planejamento dos professores, observar as práticas em sala de aula, dar feedback, promover a formação continuada da equipe docente e garantir que o Projeto Político Pedagógico da escola seja efetivamente colocado em prática.",
+    "subjects": ["especificos"]
+  },
+  {
+    "question": "Qual o papel da 'interdisciplinaridade' na organização do trabalho pedagógico?",
+    "options": [
+      "Manter cada disciplina estritamente separada das outras.",
+      "Promover o diálogo e a integração entre diferentes áreas do conhecimento para proporcionar uma aprendizagem mais significativa e contextualizada.",
+      "Reduzir o número de disciplinas do currículo.",
+      "Focar apenas em projetos, abandonando os conteúdos disciplinares."
+    ],
+    "answer": 1,
+    "hint": "Pense em construir 'pontes' entre as diferentes matérias.",
+    "feedbackCompleto": "A interdisciplinaridade busca superar a visão fragmentada do conhecimento. Ela propõe a integração e o diálogo entre as disciplinas, utilizando os conceitos e métodos de várias áreas para analisar um mesmo tema ou problema. Isso torna a aprendizagem mais contextualizada, complexa e significativa para o aluno.",
+    "subjects": ["especificos"]
+  },
+  {
+    "question": "Na organização do ensino em Minas Gerais, o que é o 'Currículo Referência de Minas Gerais (CRMG)'?",
+    "options": [
+      "Um currículo opcional que as escolas podem ou não adotar.",
+      "Um documento que substitui a BNCC no estado.",
+      "O documento que detalha as competências e habilidades da BNCC para cada etapa da educação básica, orientando o trabalho pedagógico de todas as escolas da rede estadual.",
+      "Um guia de livros didáticos a serem utilizados."
+    ],
+    "answer": 2,
+    "hint": "É o documento que 'traduz' a BNCC para a realidade mineira.",
+    "feedbackCompleto": "O Currículo Referência de Minas Gerais (CRMG) é o documento curricular oficial do estado. Ele foi elaborado com base na BNCC e detalha as competências e habilidades a serem desenvolvidas em cada ano/série da educação básica, servindo como a principal referência para o planejamento pedagógico das escolas estaduais.",
+    "subjects": ["especificos", "legislacao"]
   }
 ]
+
+
 
 
 
